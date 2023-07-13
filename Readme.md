@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Инна Ладыженская](https://up.htmlacademy.ru/adaptive-individual/1/user/2286771).
-* Наставник: `Анна Лисененкова`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
