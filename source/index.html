@@ -8,8 +8,9 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header_logo">
-      <img class="logo-image">
+    <a class="main-header__logo" href="#">
+      <img class="logo__logo-image">
+      <img class="logo__logo__text">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -35,6 +36,7 @@
     <h1 class="visually-hidden">Функциональное
       питание для котов</h1>
     <section class="main-intro">
+      <h2 class="visually-hidden">Промо</h2>
       <p class="main-intro__slogan">Занялся собой? Займись котом!</p>
       <img class="main-intro__image">
       <a class="main-intro__link button" href="#">Подобрать программу</a>
@@ -68,23 +70,57 @@
           питание.</li>
         <li class="instruction__item instruction__item--result">Уже через месяц наслаждайтесь изменениями к лучшему
           вашего питомца!</li>
-        </ul>
+      </ol>
     </section>
     <section class="cat-slider">
       <h2 class="cat-slider__title">Живой пример</h2>
       <p class="cat-slider__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
         в день.</p>
-      <dt class="cat-slider__number">5 кг</dt>
-      <dd class="cat-slider__description">Cнижение веса</dd>
-      <dt class="cat-slider__number">60 дней</dt>
-      <dd class="cat-slider__description">Затрачено времени</dd>
-      <dd class="cat-slider__costs">Затраты на питание:</dd>
-      <dt class="cat-slider__costs-number">15 000 руб.</dt>
-      <button class="cat-slider__button-prev" type="button"></button>
-      <button class="cat-slider__button-next" type="button"></button>
-
+      <dl class="cat-slider__list">
+        <dt class="cat-slider-list__number">5 кг</dt>
+        <dd class="cat-slider-list__description">Cнижение веса</dd>
+        <dt class="cat-slider-list__number">60 дней</dt>
+        <dd class="cat-slider-list__description">Затрачено времени</dd>
+        <dd class="cat-slider-list__costs">Затраты на питание:</dd>
+        <dt class="cat-slider-list__costs-number">15 000 руб.</dt>
+      </dl>
+      <button class="cat-slider__button-prev" type="button"><span class="visually-hidden">До</span></button>
+      <button class="cat-slider__button-next" type="button"><span class="visually-hidden">После</span></button>
+    </section>
   </main>
+  <footer class="main-footer">
+    <section class="main-footer__ contacts">
+      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <img class="contacts__map">
+      <a class="main-footer__logo" href="#">
+        <img class="logo-image">
+      </a>
+    </section>
+    <section class="main-footer__social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
+              class="visually-hidden"></span>Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span
+              class="visually-hidden">Ютуб</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span
+              class="visually-hidden">Телеграм</span></a>
+        </li>
+      </ul>
+    </section>
+    <section class="main-footer__copyright">
+      <h2 class="visually-hidden">Копирайт</h2>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+          Academy</span></a>
+    </section>
+  </footer>
 </body>
 
 </html>
