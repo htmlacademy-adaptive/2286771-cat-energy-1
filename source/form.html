@@ -33,6 +33,26 @@
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Подбор программы</h1>
+    <h1 class="form__title">Подбор программы</h1>
+
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="questionary">
+        <legend class="questionary__legend">Заполните анкету, и мы подберем
+          программу питания для вашего кота</legend>
+        <label class="questionary__label" for="questionary-name">Имя:*</label>
+        <input class="questionary__control input" type="text" id="questionary-name" name="questionary-name"
+          placeholder="БАРСИК">
+        <label class="questionary__label" for="questionary-weight">Вес (кг):*</label>
+        <input class="questionary__control input" type="text" id="questionary-weight" name="questionary-name"
+          placeholder="7">
+        <label class="questionary__label" for="questionary-age">Возраст (лет):</label>
+        <input class="questionary__control input" type="text" id="questionary-age" name="questionary-name"
+          placeholder="7">
+      </fieldset>
+      <fieldset class="radio">
+
+      </fieldset>
+    </form>
+
   </main>
-  </body>
+</body>
