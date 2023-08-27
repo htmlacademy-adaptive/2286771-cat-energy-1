@@ -8,13 +8,13 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img class="logo__logo-image">
-      <img class="logo__logo__text">
+    <a class="main-header__logo logo" href="#">
+      <img class="logo logo--image" src="#" alt="Логотип магазина Кэт энерджи">
+      <img class="logo logo--text" src="#" alt="Логотип магазина Кэт энерджи">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list site__list">
+      <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item">
           <a href="#">
             Главная
@@ -24,7 +24,7 @@
             Каталог продукции
           </a>
         </li>
-        <li class="site-list__item--active">
+        <li class="site-list__item site-list__item--active">
           <a href="#">
             Подбор программы
           </a>
@@ -32,22 +32,22 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h1 class="form__title">Подбор программы</h1>
-    <p class="form__intro">Заполните анкету, и мы подберем
+  <main class="form-page">
+    <h1 class="form-page__title">Подбор программы</h1>
+    <p class="form-page__intro">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="form__group questionary">
         <ul class="questionary__list">
           <li class="questionary__item">
-            <label class="questionary__label" for="questionary-name" required>Имя:*</label>
+            <label class="questionary__label" for="questionary-name">Имя:*</label>
             <input class="questionary__control input" type="text" id="questionary-name" name="questionary-name"
-              placeholder="БАРСИК">
+              placeholder="БАРСИК" required>
           </li>
           <li class="questionary__item">
-            <label class="questionary__label" for="questionary-weight" required>Вес (кг):*</label>
+            <label class="questionary__label" for="questionary-weight">Вес (кг):*</label>
             <input class="questionary__control input" type="number" id="questionary-weight" name="questionary-name"
-              placeholder="7">
+              placeholder="7" required>
           </li>
           <li class="questionary__item">
             <label class="questionary__label" for="questionary-age">Возраст (лет):</label>
@@ -60,7 +60,7 @@
         <ul class="radio__list">
           <li class="radio__item">
             <label class="radio__label">
-              <input class="radio__control--checked" type="radio" name="radio" checked>Похудение
+              <input class="radio__control radio__control--checked" type="radio" name="radio" checked>Похудение
             </label>
           </li>
           <li class="radio__item">
@@ -79,14 +79,14 @@
         <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <label class="contacts__label" for="contacts-email" required>E-mail:*</label>
+            <label class="contacts__label" for="contacts-email">E-mail:*</label>
             <input class="contacts__control input" type="email" id="contacts-email" name="contacts-email"
-              placeholder="кuklachev@gmail.com">
+              placeholder="кuklachev@gmail.com" required>
           </li>
           <li class="contacts__item">
-            <label class="contacts__label" for="contacts-telephone" required>Телефон:*</label>
+            <label class="contacts__label" for="contacts-telephone">Телефон:*</label>
             <input class="contacts__control input" type="tel" id="contacts-telephone" name="contacts-telephone"
-              placeholder="8 (960) 900-60-90">
+              placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </fieldset>
@@ -99,39 +99,38 @@
         <ul class="checkbox__list">
           <li class="checkbox__item">
             <label class="checkbox__label">
-              <input class="checkbox__control--checked" type="checkbox" name="checkbox" checked>Cахарозаменитель
+              <input class="checkbox__control checkbox__control--checked" type="checkbox" name="checkbox"
+                checked>Cахарозаменитель
             </label>
           </li>
           <li class="checkbox__item">
             <label class="checkbox__label">
-              <input class="checkbox__control--checked" type="checkbox" name="checkbox">Молоко
+              <input class="checkbox__control" type="checkbox" name="checkbox">Молоко
             </label>
           </li>
           <li class="checkbox__item">
             <label class="checkbox__label">
-              <input class="checkbox__control--checked" type="checkbox" name="checkbox">Питьевая вода
+              <input class="checkbox__control" type="checkbox" name="checkbox">Питьевая вода
             </label>
           </li>
           <li class="checkbox__item">
             <label class="checkbox__label">
-              <input class="checkbox__control--checked" type="checkbox" name="checkbox">Витамины
+              <input class="checkbox__control" type="checkbox" name="checkbox">Витамины
             </label>
           </li>
         </ul>
       </fieldset>
-      <button class="button--size-xs" type="submit">Отправить заявку</button>
+      <button class="button button--size-xs" type="submit">Отправить заявку</button>
       <p>* — Обязательные поля</p>
     </form>
     <footer class="footer">
-      <section class="footer__ contacts--mnain-page">
+      <section class="footer__contacts footer__contacts--form-page contacts">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <img class="contacts__map">
-        <a class="footer__logo" href="#">
-          <img class="logo-image">
-        </a>
+        <img class="contacts__map map" src="#" alt="Магазин Кэт энерджи на карте">
+        <img class="map map--pin" src="#" alt="Картографический флажок, указывающий на место расположения магазина">
       </section>
-      <section class="footer__social">
+      <section class="footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
@@ -148,7 +147,7 @@
           </li>
         </ul>
       </section>
-      <section class="footer__copyright">
+      <section class="footer__copyright copyright">
         <h2 class="visually-hidden">Копирайт</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
             Academy</span></a>
