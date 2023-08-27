@@ -37,38 +37,88 @@
     <p class="form__intro">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="from__questionary questionary">
-        <label class="questionary__label" for="questionary-name">Имя:*</label>
-        <input class="questionary__control input" type="text" id="questionary-name" name="questionary-name"
-          placeholder="БАРСИК">
-        <label class="questionary__label" for="questionary-weight">Вес (кг):*</label>
-        <input class="questionary__control input" type="text" id="questionary-weight" name="questionary-name"
-          placeholder="7">
-        <label class="questionary__label" for="questionary-age">Возраст (лет):</label>
-        <input class="questionary__control input" type="text" id="questionary-age" name="questionary-name"
-          placeholder="7">
+      <fieldset class="form__group questionary">
+        <ul class="questionary__list">
+          <li class="questionary__item">
+            <label class="questionary__label" for="questionary-name">Имя:*</label>
+            <input class="questionary__control input" type="text" id="questionary-name" name="questionary-name"
+              placeholder="БАРСИК">
+          </li>
+          <li class="questionary__item">
+            <label class="questionary__label" for="questionary-weight">Вес (кг):*</label>
+            <input class="questionary__control input" type="number" id="questionary-weight" name="questionary-name"
+              placeholder="7">
+          </li>
+          <li class="questionary__item">
+            <label class="questionary__label" for="questionary-age">Возраст (лет):</label>
+            <input class="questionary__control input" type="number" id="questionary-age" name="questionary-name"
+              placeholder="7">
+          </li>
+        </ul>
       </fieldset>
-      <fieldset class="form__radio radio">
-        <label class="radio__label">
-          <input class="radio__control--checked" type="radio" name="radio" checked>Похудение
-        </label>
-        <label class="radio__label">
-          <input class="radio__control" type="radio" name="radio">Набор массы
-        </label>
-        <label class="radio__label">
-          <input class="radio__control" type="radio" name="radio">Не знаю (Нужен ваш совет)
-        </label>
+      <fieldset class="form__group radio">
+        <ul class="radio__list">
+          <li class="radio__item">
+            <label class="radio__label">
+              <input class="radio__control--checked" type="radio" name="radio" checked>Похудение
+            </label>
+          </li>
+          <li class="radio__item">
+            <label class="radio__label">
+              <input class="radio__control" type="radio" name="radio">Набор массы
+            </label>
+          </li>
+          <li class="radio__item">
+            <label class="radio__label">
+              <input class="radio__control" type="radio" name="radio">Не знаю (Нужен ваш совет)
+            </label>
+          </li>
+        </ul>
       </fieldset>
-      <fieldset class="form__contacts contacts">
+      <fieldset class="form__group contacts">
         <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
-        <label class="contacts__label" for="contacts-email">E-mail:*</label>
-        <input class="contacts__control input" type="email" id="contacts-email" name="contacts-email"
-          placeholder="кuklachev@gmail.com">
-        <label class="contacts__label" for="contacts-telephone">Вес (кг):*</label>
-        <input class="contacts__control input" type="tel" id="contacts-telephone" name="contacts-telephone"
-          placeholder="8 (960) 900-60-90">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <label class="contacts__label" for="contacts-email">E-mail:*</label>
+            <input class="contacts__control input" type="email" id="contacts-email" name="contacts-email"
+              placeholder="кuklachev@gmail.com">
+          </li>
+          <li class="contacts__item">
+            <label class="contacts__label" for="contacts-telephone">Вес (кг):*</label>
+            <input class="contacts__control input" type="tel" id="contacts-telephone" name="contacts-telephone"
+              placeholder="8 (960) 900-60-90">
+          </li>
+        </ul>
       </fieldset>
-
+      <fieldset>
+        <legend>Комментарий</legend>
+        <textarea name="comment" placeholder="Расскажите обо всех повадках кота" id="message"></textarea>
+      </fieldset>
+      <fieldset class="form__group checkbox">
+        <legend class="checkbox__legend">Дополнительно</legend>
+        <ul class="checkbox__list">
+          <li class="checkbox__item">
+            <label class="checkbox__label">
+              <input class="checkbox__control--checked" type="checkbox" name="checkbox" checked>Cахарозаменитель
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label class="checkbox__label">
+              <input class="checkbox__control--checked" type="checkbox" name="checkbox" checked>Молоко
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label class="checkbox__label">
+              <input class="checkbox__control--checked" type="checkbox" name="checkbox" checked>Питьевая вода
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label class="checkbox__label">
+              <input class="checkbox__control--checked" type="checkbox" name="checkbox" checked>Витамины
+            </label>
+          </li>
+        </ul>
+      </fieldset>
     </form>
 
   </main>
