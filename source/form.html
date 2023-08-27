@@ -40,12 +40,12 @@
       <fieldset class="form__group questionary">
         <ul class="questionary__list">
           <li class="questionary__item">
-            <label class="questionary__label" for="questionary-name">Имя:*</label>
+            <label class="questionary__label" for="questionary-name" required>Имя:*</label>
             <input class="questionary__control input" type="text" id="questionary-name" name="questionary-name"
               placeholder="БАРСИК">
           </li>
           <li class="questionary__item">
-            <label class="questionary__label" for="questionary-weight">Вес (кг):*</label>
+            <label class="questionary__label" for="questionary-weight" required>Вес (кг):*</label>
             <input class="questionary__control input" type="number" id="questionary-weight" name="questionary-name"
               placeholder="7">
           </li>
@@ -79,12 +79,12 @@
         <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <label class="contacts__label" for="contacts-email">E-mail:*</label>
+            <label class="contacts__label" for="contacts-email" required>E-mail:*</label>
             <input class="contacts__control input" type="email" id="contacts-email" name="contacts-email"
               placeholder="кuklachev@gmail.com">
           </li>
           <li class="contacts__item">
-            <label class="contacts__label" for="contacts-telephone">Вес (кг):*</label>
+            <label class="contacts__label" for="contacts-telephone" required>Телефон:*</label>
             <input class="contacts__control input" type="tel" id="contacts-telephone" name="contacts-telephone"
               placeholder="8 (960) 900-60-90">
           </li>
@@ -119,6 +119,8 @@
           </li>
         </ul>
       </fieldset>
+      <button class="button--size-xs" type="submit">Отправить заявку</button>
+      <p>* — Обязательные поля</p>
     </form>
     <footer class="footer">
       <section class="footer__ contacts--mnain-page">
