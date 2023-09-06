@@ -1,5 +1,35 @@
 // Начните писать стили здесь
-body { background: tomato; }
+@import "./blocks/additional-card.scss";
+@import "./blocks/additional-parameter.scss";
+@import "./blocks/additional-product-list.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/button.scss";
+@import "./blocks/cat-slider.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/form-contacts.scss";
+@import "./blocks/form-page.scss";
+@import "./blocks/inner-container.scss";
+@import "./blocks/instruction.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-card.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-intro.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-page.scss";
+@import "./blocks/main-parameter.scss";
+@import "./blocks/main-product-list.scss";
+@import "./blocks/main-products.scss";
+@import "./blocks/offers.scss";
+@import "./blocks/questionary.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/social.scss";
+
 
 
 
