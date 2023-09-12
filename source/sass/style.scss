@@ -31,6 +31,29 @@
 @import "./blocks/site-list.scss";
 @import "./blocks/social.scss";
 
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Lato/Lato-Regular.woff") format("woff2"), url("../fonts/Lato/Lato-Regular.woff2") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Lato/Lato-Regular.woff") format("woff2"), url("../fonts/Lato/Lato-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Lato/Lato-Regular.woff") format("woff2"), url("../fonts/Lato/Lato-Regular.woff") format("woff");
+  font-display: swap;
+}
 
 
 
