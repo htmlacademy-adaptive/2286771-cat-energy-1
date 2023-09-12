@@ -1,6 +1,21 @@
-.main-intro__slogan {
-  background-image:  url("../img/index-cat-background.jpg"), linear-gradient(to right, rgba(80, 155, 34, 0.85), rgba(70, 144, 24, 0.85));
+$basic-white: #FFF;
+.main-intro {
+  background-image: url("../img/index-cat-background.jpg"), linear-gradient(to right, rgba(80, 155, 34, 0.85), rgba(70, 144, 24, 0.85));
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   min-height: 302px;
 }
+
+.main-intro__title {
+  font-family: Oswald;
+  font-size: 36px;
+  color: $basic-white;
+  line-height: 36px;
+}
+
+.main-intro__slogan {
+  font-family: Oswald;
+  color: $basic-white;
+  text-transform: uppercase;
+}
+
