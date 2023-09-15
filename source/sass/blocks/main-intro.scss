@@ -1,21 +1,24 @@
-$basic-white: #FFF;
 .main-intro {
   background-image: url("../img/index-cat-background.jpg"), linear-gradient(to right, rgba(80, 155, 34, 0.85), rgba(70, 144, 24, 0.85));
   background-repeat: no-repeat, no-repeat;
-  background-position: center;
-  min-height: 302px;
+  background-position: top center, top;
+  background-size: 302px 320px, 100% 320px;
+  min-height: 480px;
 }
 
 .main-intro__title {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   color: $basic-white;
   line-height: 36px;
 }
 
 .main-intro__slogan {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   color: $basic-white;
   text-transform: uppercase;
 }
 
+.main-intro__image {
+  display: block;
+}

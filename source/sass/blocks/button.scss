@@ -1,9 +1,8 @@
-$basic-white: #FFF;
-$basic-green: rgba(104, 183, 56, 1);
 .button {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 18px;
   color: $basic-white;
+  background-color: $basic-green;
 }

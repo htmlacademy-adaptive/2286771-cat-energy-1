@@ -1,11 +1,12 @@
 // Начните писать стили здесь
+@import "./global/variables.scss";
 @import "./blocks/additional-card.scss";
 @import "./blocks/additional-parameter.scss";
 @import "./blocks/additional-product-list.scss";
 @import "./blocks/additional-products.scss";
 @import "./blocks/button.scss";
 @import "./blocks/cat-slider.scss";
-@import ".blocks/cat-slider-list.scss";
+@import "./blocks/cat-slider-list.scss";
 @import "./blocks/checkbox.scss";
 @import "./blocks/comment.scss";
 @import "./blocks/contacts.scss";
@@ -14,6 +15,7 @@
 @import "./blocks/form-contacts.scss";
 @import "./blocks/form-page.scss";
 @import "./blocks/inner-container.scss";
+@import "./blocks/inner-page.scss";
 @import "./blocks/instruction.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/main-card.scss";
@@ -32,6 +34,7 @@
 @import "./blocks/radio.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/social.scss";
+
 
 @font-face {
   font-family: "Lato";
@@ -56,8 +59,3 @@
   src: url("../fonts/Lato/Lato-Regular.woff") format("woff2"), url("../fonts/Lato/Lato-Regular.woff") format("woff");
   font-display: swap;
 }
-
-
-
-
-
