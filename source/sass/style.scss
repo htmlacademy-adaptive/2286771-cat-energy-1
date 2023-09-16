@@ -1,5 +1,11 @@
-// Начните писать стили здесь
-@import "./global/variables.scss";
+// добавляем переменные
+@import "./base/variables.scss";
+
+//добавляем базовые свойства
+@import "./base/base.scss";
+@import "./base/fonts.scss";
+
+//блоки компонентов
 @import "./blocks/additional-card.scss";
 @import "./blocks/additional-parameter.scss";
 @import "./blocks/additional-product-list.scss";
@@ -34,28 +40,3 @@
 @import "./blocks/radio.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/social.scss";
-
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Lato/Lato-Regular.woff") format("woff2"), url("../fonts/Lato/Lato-Regular.woff2") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/Lato/Lato-Regular.woff") format("woff2"), url("../fonts/Lato/Lato-Regular.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Lato/Lato-Regular.woff") format("woff2"), url("../fonts/Lato/Lato-Regular.woff") format("woff");
-  font-display: swap;
-}
