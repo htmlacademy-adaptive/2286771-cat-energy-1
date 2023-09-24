@@ -1,7 +1,25 @@
+.instruction {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 49px;
+}
+
 .instruction__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-rows: repeat(4, 60px);
+  grid-template-columns: 60px 199px;
+  gap: 20px;
+}
+
+.instruction__list::before {
+  content: "";
+  display: block;
+  grid-column: 1/2;
+  height: 60px;
+  margin: 0;
 }
 
 .instruction__title {
@@ -9,8 +27,64 @@
   font-size: 36px;
   line-height: 40px;
   color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
 }
 
 .instruction__item {
   color: $special-dark-grey;
+  grid-column: 2/3;
+}
+
+.instruction__item--content::before {
+  content: "";
+  display: block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  background-color: $basic-green;
+  background-image: url("../img/leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 20px;
+}
+
+.instruction__item--preparation::before {
+  content: "";
+  display: block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  background-color: $basic-green;
+  background-image: url("../img/water.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 20px;
+}
+
+.instruction__item--use::before {
+  content: "";
+  display: block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  background-color: $basic-green;
+  background-image: url("../img/tableware.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 20px;
+}
+
+.instruction__item--result::before {
+  content: "";
+  display: block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  background-color: $basic-green;
+  background-image: url("../img/clock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 20px;
 }

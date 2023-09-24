@@ -1,13 +1,31 @@
+.offers {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .offers__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    grid-template-rows: 374px;
+    gap: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
 }
 
 .offers__item {
   background-color: $basic-grey;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
 }
 
+}
 .offers__title {
   color: rgb(0, 0, 0);
   font-family: "Oswald", "Arial", sans-serif;

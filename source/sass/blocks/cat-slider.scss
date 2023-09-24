@@ -1,14 +1,24 @@
 .cat-slider {
   background-color: $basic-grey;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
 }
 
 .cat-slider__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-bottom: 40px;
 }
 
 .cat-slider__text {
   color: $special-dark-grey;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .cat-slider__costs {
@@ -16,5 +26,36 @@
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.cat-slider__list {
+  margin: 0;
+  padding: 0;
+  margin-left: 25px;
+  display: grid;
+  grid-template-rows: 56px 24px;
+  grid-template-columns: 124px 124px;
+  column-gap: 32px;
+  margin-bottom: 20px;
+}
+
+.cat-slider-list__number {
+  grid-row: 1/2;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.cat-slider-list__description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 22px;
+  padding-right: 25px;
   text-align: center;
 }
