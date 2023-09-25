@@ -6,6 +6,7 @@
 
 .instruction__title {
   font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: rgb(0, 0, 0);
@@ -46,12 +47,18 @@
 .instruction__item {
   color: $special-dark-grey;
   grid-column: 2/3;
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+    font-size: 16px;
+  }
 }
 
 .instruction__item--content {
   @media (min-width: $tablet-width) {
     grid-column: 1;
     grid-row: 1;
+    padding-top: 151px;
   }
 }
 
@@ -59,6 +66,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 1;
+    padding-top: 151px;
   }
 }
 
@@ -91,6 +99,10 @@
   @media (min-width: $tablet-width) {
     grid-row: 1;
     grid-column: 1;
+    position: relative;
+    margin-top: -111px;
+    margin-bottom: 31px;
+    left: 0;
   }
 }
 
@@ -107,7 +119,12 @@
   left: 20px;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    grid-row: 1;
+    grid-column: 2;
+    position: relative;
+    margin-top: -111px;
+    margin-bottom: 31px;
+    left: 0;
   }
 }
 
@@ -124,7 +141,12 @@
   left: 20px;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    grid-row: 2;
+    grid-column: 1;
+    position: relative;
+    left: 0;
+    margin-top: 31px;
+    margin-bottom: 31px;
   }
 }
 
@@ -141,6 +163,11 @@
   left: 20px;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    grid-row: 2;
+    grid-column: 2;
+    position: relative;
+    left: 0;
+    margin-top: 31px;
+    margin-bottom: 31px;
   }
 }
