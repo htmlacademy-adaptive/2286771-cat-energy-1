@@ -39,7 +39,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    display:none;
+    display: none;
   }
 }
 
@@ -49,34 +49,33 @@
 }
 
 .instruction__item--content {
-
   @media (min-width: $tablet-width) {
     grid-column: 1;
     grid-row: 1;
-}
-
+  }
 }
 
 .instruction__item--preparation {
   @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 1;
-}
+  }
 }
 
 .instruction__item--use {
   @media (min-width: $tablet-width) {
     grid-column: 1;
     grid-row: 2;
-}
+  }
 }
 
 .instruction__item--result {
   @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 2;
+  }
 }
-}
+
 .instruction__item--content::before {
   content: "";
   display: block;
@@ -92,8 +91,9 @@
   @media (min-width: $tablet-width) {
     grid-row: 1;
     grid-column: 1;
+  }
 }
-}
+
 .instruction__item--preparation::before {
   content: "";
   display: block;
@@ -108,7 +108,7 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-}
+  }
 }
 
 .instruction__item--use::before {
@@ -125,7 +125,7 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-}
+  }
 }
 
 .instruction__item--result::before {
@@ -142,5 +142,5 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-}
+  }
 }

@@ -48,7 +48,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .main-intro {
     grid-template-rows: 120px 81px 83px 187px;
     grid-template-columns: 30px 1fr 30px;
@@ -86,12 +85,10 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .main-intro {
     display: block;
     margin-left: 80px;
     margin-bottom: 82px;
-
   }
 
   .main-intro__title {
