@@ -1,7 +1,17 @@
 .contacts {
-  margin: 26px 20px;
   display: flex;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
+
 
 .contacts--inner-page {
   background-color: $basic-grey;

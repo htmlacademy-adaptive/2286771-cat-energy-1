@@ -1,0 +1,14 @@
+.instruction-wrapper {
+  margin: 0 auto;
+  width: 280px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}

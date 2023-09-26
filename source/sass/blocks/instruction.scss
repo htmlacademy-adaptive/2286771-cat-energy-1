@@ -1,6 +1,4 @@
 .instruction {
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 49px;
 }
 
@@ -32,6 +30,7 @@
 .instruction__item {
   color: $special-dark-grey;
   grid-column: 2/3;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     line-height: 24px;
@@ -62,7 +61,7 @@
   background-image: url("../img/leaf.svg");
   background-repeat: no-repeat;
   background-position: center;
-  left: 20px;
+  left: -80px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -82,7 +81,7 @@
   background-image: url("../img/water.svg");
   background-repeat: no-repeat;
   background-position: center;
-  left: 20px;
+  left: -80px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -102,10 +101,9 @@
   background-image: url("../img/tableware.svg");
   background-repeat: no-repeat;
   background-position: center;
-  left: 20px;
+  left: -80px;
 
   @media (min-width: $tablet-width) {
-
     position: relative;
     left: 0;
     margin-top: 31px;
@@ -123,10 +121,9 @@
   background-image: url("../img/clock.svg");
   background-repeat: no-repeat;
   background-position: center;
-  left: 20px;
+  left: -80px;
 
   @media (min-width: $tablet-width) {
-
     position: relative;
     left: 0;
     margin-top: 31px;

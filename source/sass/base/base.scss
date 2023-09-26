@@ -8,6 +8,12 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
 }
 
 .visually-hidden {
