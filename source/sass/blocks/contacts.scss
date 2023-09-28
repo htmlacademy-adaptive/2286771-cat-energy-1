@@ -1,12 +1,4 @@
-.contacts {
-  margin: 0 auto;
-  min-width: 280px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 1200px;
-  }
+.contacts--inner-page {
+  background-color: $basic-grey;
 }
+
