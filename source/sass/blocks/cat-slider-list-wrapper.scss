@@ -1,0 +1,11 @@
+.cat-slider-list-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

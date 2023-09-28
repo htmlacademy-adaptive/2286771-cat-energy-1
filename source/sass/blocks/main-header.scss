@@ -1,32 +1,26 @@
-.main-header {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 280px;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 708px;
-    margin-bottom: 60px;
-  }
-
+.main-header::before {
   @media (min-width: $desktop-width) {
-    width: 1200px;
-    padding: 53px 0 111px 0;
+    background-image: url("../img/index-cat-background.jpg"), linear-gradient(to right, rgba(80, 155, 34, 0.85), rgba(70, 144, 24, 0.85));
+    content: "";
+    height: 400px;
+    width: 50%;
+    display: block;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, top;
+    position: absolute;
+    right: 0;
   }
 }
 
-.main-header__logo {
-  height: 65px;
-  display: block;
+.main-header {
+  margin: 0 auto;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
-    width: 174px;
+    min-width: 769px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 202px;
-    padding-right: 408px;
+    min-width: 1440px;
   }
 }
