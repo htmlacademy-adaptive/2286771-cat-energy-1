@@ -1,11 +1,9 @@
-.instruction-wrapper {
+.container {
   margin: 0 auto;
-  width: 280px;
-
+  width: 281px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
