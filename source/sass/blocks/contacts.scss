@@ -1,3 +1,55 @@
 .contacts--inner-page {
   background-color: $basic-grey;
 }
+
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    justify-content: space-between;
+  }
+}
+
+.contacts__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgb(17, 17, 17);
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 171px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+  }
+}
+
+.contacts__address {
+  line-height: 20px;
+  color: $special-dark-grey;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    text-align: right;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+  }
+}

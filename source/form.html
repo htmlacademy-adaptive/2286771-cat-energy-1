@@ -36,12 +36,15 @@
           </li>
         </ul>
       </nav>
+      </div>
   </header>
   <main class="form-page">
-    <h1 class="form-page__title">Подбор программы</h1>
+    <div class="container">
+    <h1 class="form-page__title title">Подбор программы</h1>
     <p class="form-page__intro">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="form__wrapper form__wrapper--primary">
       <fieldset class="form__group questionary">
         <ul class="questionary__list">
           <li class="questionary__item">
@@ -65,21 +68,22 @@
         <ul class="radio__list">
           <li class="radio__item">
             <label class="radio__label">
-              <input class="radio__control radio__control--checked" type="radio" name="radio" checked>Похудение
+              <input class="radio__control radio__control--kind_checkable radio__control--type_radio" type="radio" name="radio" checked>Похудение
             </label>
           </li>
           <li class="radio__item">
             <label class="radio__label">
-              <input class="radio__control" type="radio" name="radio">Набор массы
+              <input class="radio__control radio__control--kind_checkable" type="radio" name="radio">Набор массы
             </label>
           </li>
           <li class="radio__item">
             <label class="radio__label">
-              <input class="radio__control" type="radio" name="radio">Не знаю (Нужен ваш совет)
+              <input class="radio__control radio__control--kind_checkable" type="radio" name="radio">Не знаю (Нужен ваш совет)
             </label>
           </li>
         </ul>
       </fieldset>
+      </div>
       <fieldset class="form__group form-contacts">
         <legend class="form-contacts__legend">Контактные данные (владельца кота)</legend>
         <ul class="form-contacts__list">
@@ -97,8 +101,9 @@
       </fieldset>
       <fieldset class="form__group comment">
         <legend class="comment__legend">Комментарий</legend>
-        <textarea name="comment" placeholder="Расскажите обо всех повадках кота" id="message"></textarea>
+        <textarea class="comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота" id="message"></textarea>
       </fieldset>
+      <div class="form__wrapper form__wrapper--secondary">
       <fieldset class="form__group checkbox">
         <legend class="checkbox__legend">Дополнительно</legend>
         <ul class="checkbox__list">
@@ -125,12 +130,16 @@
           </li>
         </ul>
       </fieldset>
-      <button class="button button--size-xs" type="submit">Отправить заявку</button>
+      <button class="form__button button button--size-xs" type="submit">Отправить заявку</button>
       <p class="form-page__foot-note">* — Обязательные поля</p>
+</div>
     </form>
+  </div>
     <section class="contacts contacts--form-page">
+      <div class="contacts__wrapper container">
       <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
     </section>
   </main>
   <footer class="footer">

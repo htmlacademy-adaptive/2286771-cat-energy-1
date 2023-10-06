@@ -3,4 +3,34 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
+  padding-bottom: 36px;
+}
+
+.comment__textarea {
+  width: 280px;
+  height: 151px;
+  flex-shrink: 0;
+  border: 1px solid #E7E7E7;
+
+  @media (min-width: $tablet-width) {
+    width: 631px;
+    height: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    height: 174px;
+
+  }
+}
+
+.comment__textarea::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  text-align: start;
+  padding-top: 9px;
 }

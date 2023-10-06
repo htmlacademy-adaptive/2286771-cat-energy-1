@@ -1,8 +1,27 @@
 .promotion__description {
   color: $basic-white;
-  background: url("../img/catalog-cat-background.jpg");
-  background-repeat: no-repeat;
-  min-height: 290px;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+  background: url("../img/catalog-cat-background.jpg") 100% 100% no-repeat;
+  background-repeat: no-repeat;
+  height: 200px;
+  background-size: cover;
+  margin-bottom: 35px;
+  margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../../img/tablet/cat-background-tablet.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 707px;
+    height: 200px;
+    margin-bottom: 76px;
+  }
+  @media (min-width: $desktop-width) {
+    background: url("../img/catalog-cat-background.jpg") no-repeat;
+    width: 245px;
+    height: 280px;
+    margin-top: 180px;
+}
 }

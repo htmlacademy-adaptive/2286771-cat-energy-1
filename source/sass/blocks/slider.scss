@@ -1,10 +1,18 @@
-.cat-slider-wrapper {
+.slider {
   background-color: $basic-grey;
   padding: 0;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
 }
 
-.cat-slider-wrapper__title {
+.slider__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -14,14 +22,14 @@
   margin-bottom: 40px;
 }
 
-.cat-slider-wrapper__text {
+.slider__text {
   color: $special-dark-grey;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
-.cat-slider-wrapper__costs {
+.slider__costs {
   color: $black;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 20px;
@@ -32,7 +40,7 @@
   margin-bottom: 20px;
 }
 
-.cat-slider-wrapper__list {
+.slider__parameters {
   margin: 0;
   padding: 0;
   display: grid;
@@ -42,7 +50,7 @@
   margin-bottom: 20px;
 }
 
-.cat-slider-list__number {
+.slider__number {
   grid-row: 1/2;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
@@ -50,7 +58,7 @@
   line-height: 24px;
 }
 
-.cat-slider-list__description {
+.slider__description {
   margin: 0;
   font-size: 12px;
   line-height: 12px;
