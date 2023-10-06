@@ -44,7 +44,7 @@
     <p class="form-page__intro">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="form__wrapper form__wrapper--primary">
+      <div class="form__wrapper form__wrapper">
       <fieldset class="form__group questionary">
         <ul class="questionary__list">
           <li class="questionary__item">
@@ -103,7 +103,7 @@
         <legend class="comment__legend">Комментарий</legend>
         <textarea class="comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота" id="message"></textarea>
       </fieldset>
-      <div class="form__wrapper form__wrapper--secondary">
+
       <fieldset class="form__group checkbox">
         <legend class="checkbox__legend">Дополнительно</legend>
         <ul class="checkbox__list">
@@ -130,10 +130,12 @@
           </li>
         </ul>
       </fieldset>
-      <button class="form__button button button--size-xs" type="submit">Отправить заявку</button>
-      <p class="form-page__foot-note">* — Обязательные поля</p>
-</div>
+
     </form>
+    <div class="form-page__wrapper">
+    <button class="form-page__button button button--size-xs" type="submit">Отправить заявку</button>
+      <p class="form-page__foot-note">* — Обязательные поля</p>
+  </div>
   </div>
     <section class="contacts contacts--form-page">
       <div class="contacts__wrapper container">

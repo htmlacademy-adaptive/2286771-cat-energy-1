@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.form__wrapper--primary {
+.form__wrapper {
   @media (min-width: $desktop-width) {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -12,21 +12,21 @@
   margin-bottom: 69px;
 }
 }
-.form__wrapper--secondary {
+.form-page__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 282px 482px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 64px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 568px 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 84px;
     row-gap: 61px;
   }
 }
 
-.form__button {
+.form-page__button {
   grid-column: 1/2;
 }

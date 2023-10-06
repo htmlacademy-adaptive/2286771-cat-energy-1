@@ -20,16 +20,19 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 282px 482px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 64px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 284px 368px 284px 282px;
-    column-gap: 0;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 84px;
+    padding-bottom: 61px;
 
   }
 }
@@ -38,6 +41,7 @@
   margin: 0;
   padding: 0;
   grid-column: 1/3;
+
 }
 
 .checkbox__control {
