@@ -9,8 +9,9 @@
 }
 
 .radio__label:last-child {
-  padding-bottom:19px;
+  padding-bottom: 19px;
 }
+
 .radio__list {
   margin: 0;
   padding: 0;
@@ -20,6 +21,10 @@
 .radio {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
 }
 
 .radio__control--kind_checkable {

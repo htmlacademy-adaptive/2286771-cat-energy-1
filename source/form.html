@@ -36,111 +36,112 @@
           </li>
         </ul>
       </nav>
-      </div>
+    </div>
   </header>
   <main class="form-page">
     <div class="container">
-    <h1 class="form-page__title title">Подбор программы</h1>
-    <p class="form-page__intro">Заполните анкету, и мы подберем
-      программу питания для вашего кота</p>
-    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="form__wrapper form__wrapper">
-      <fieldset class="form__group questionary">
-        <ul class="questionary__list">
-          <li class="questionary__item">
-            <label class="questionary__label" for="questionary-name">Имя:*</label>
-            <input class="questionary__control input" type="text" id="questionary-name" name="questionary-name"
-              placeholder="БАРСИК" required>
-          </li>
-          <li class="questionary__item">
-            <label class="questionary__label" for="questionary-weight">Вес (кг):*</label>
-            <input class="questionary__control input" type="number" id="questionary-weight" name="questionary-name"
-              placeholder="7" required>
-          </li>
-          <li class="questionary__item">
-            <label class="questionary__label" for="questionary-age">Возраст (лет):</label>
-            <input class="questionary__control input" type="number" id="questionary-age" name="questionary-name"
-              placeholder="7">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__group radio">
-        <ul class="radio__list">
-          <li class="radio__item">
-            <label class="radio__label">
-              <input class="radio__control radio__control--kind_checkable radio__control--type_radio" type="radio" name="radio" checked>Похудение
-            </label>
-          </li>
-          <li class="radio__item">
-            <label class="radio__label">
-              <input class="radio__control radio__control--kind_checkable" type="radio" name="radio">Набор массы
-            </label>
-          </li>
-          <li class="radio__item">
-            <label class="radio__label">
-              <input class="radio__control radio__control--kind_checkable" type="radio" name="radio">Не знаю (Нужен ваш совет)
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      </div>
-      <fieldset class="form__group form-contacts">
-        <legend class="form-contacts__legend">Контактные данные (владельца кота)</legend>
-        <ul class="form-contacts__list">
-          <li class="form-contacts__item">
-            <label class="form-contacts__label" for="contacts-email">E-mail:*</label>
-            <input class="form-contacts__control input" type="email" id="contacts-email" name="contacts-email"
-              placeholder="кuklachev@gmail.com" required>
-          </li>
-          <li class="form-contacts__item">
-            <label class="form-contacts__label" for="contacts-telephone">Телефон:*</label>
-            <input class="form-contacts__control input" type="tel" id="contacts-telephone" name="contacts-telephone"
-              placeholder="8 (960) 900-60-90" required>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__group comment">
-        <legend class="comment__legend">Комментарий</legend>
-        <textarea class="comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота" id="message"></textarea>
-      </fieldset>
+      <h1 class="form-page__title title">Подбор программы</h1>
+      <p class="form-page__intro">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form__group questionary">
+          <ul class="questionary__list">
+            <li class="questionary__item">
+              <label class="questionary__label" for="questionary-name">Имя:*</label>
+              <input class="questionary__control input" type="text" id="questionary-name" name="questionary-name"
+                placeholder="БАРСИК" required>
+            </li>
+            <li class="questionary__item">
+              <label class="questionary__label" for="questionary-weight">Вес (кг):*</label>
+              <input class="questionary__control input" type="number" id="questionary-weight" name="questionary-name"
+                placeholder="7" required>
+            </li>
+            <li class="questionary__item">
+              <label class="questionary__label" for="questionary-age">Возраст (лет):</label>
+              <input class="questionary__control input" type="number" id="questionary-age" name="questionary-name"
+                placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__group radio">
+          <ul class="radio__list">
+            <li class="radio__item">
+              <label class="radio__label">
+                <input class="radio__control radio__control--kind_checkable radio__control--type_radio" type="radio"
+                  name="radio" checked>Похудение
+              </label>
+            </li>
+            <li class="radio__item">
+              <label class="radio__label">
+                <input class="radio__control radio__control--kind_checkable" type="radio" name="radio">Набор массы
+              </label>
+            </li>
+            <li class="radio__item">
+              <label class="radio__label">
+                <input class="radio__control radio__control--kind_checkable" type="radio" name="radio">Не знаю (Нужен
+                ваш совет)
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
-      <fieldset class="form__group checkbox">
-        <legend class="checkbox__legend">Дополнительно</legend>
-        <ul class="checkbox__list">
-          <li class="checkbox__item">
-            <label class="checkbox__label">
-              <input class="checkbox__control checkbox__control--checked" type="checkbox" name="checkbox"
-                checked>Cахарозаменитель
-            </label>
-          </li>
-          <li class="checkbox__item">
-            <label class="checkbox__label">
-              <input class="checkbox__control" type="checkbox" name="checkbox">Молоко
-            </label>
-          </li>
-          <li class="checkbox__item">
-            <label class="checkbox__label">
-              <input class="checkbox__control" type="checkbox" name="checkbox">Питьевая вода
-            </label>
-          </li>
-          <li class="checkbox__item">
-            <label class="checkbox__label">
-              <input class="checkbox__control" type="checkbox" name="checkbox">Витамины
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+        <fieldset class="form__group form-contacts">
+          <legend class="form-contacts__legend">Контактные данные (владельца кота)</legend>
+          <ul class="form-contacts__list">
+            <li class="form-contacts__item">
+              <label class="form-contacts__label" for="contacts-email">E-mail:*</label>
+              <input class="form-contacts__control input" type="email" id="contacts-email" name="contacts-email"
+                placeholder="кuklachev@gmail.com" required>
+            </li>
+            <li class="form-contacts__item">
+              <label class="form-contacts__label" for="contacts-telephone">Телефон:*</label>
+              <input class="form-contacts__control input" type="tel" id="contacts-telephone" name="contacts-telephone"
+                placeholder="8 (960) 900-60-90" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__group comment">
+          <legend class="comment__legend">Комментарий</legend>
+          <textarea class="comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"
+            id="message"></textarea>
+        </fieldset>
 
-    </form>
-    <div class="form-page__wrapper">
-    <button class="form-page__button button button--size-xs" type="submit">Отправить заявку</button>
-      <p class="form-page__foot-note">* — Обязательные поля</p>
-  </div>
-  </div>
+        <fieldset class="form__group checkbox">
+          <legend class="checkbox__legend">Дополнительно</legend>
+          <ul class="checkbox__list">
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+                <input class="checkbox__control checkbox__control--checked" type="checkbox" name="checkbox"
+                  checked>Cахарозаменитель
+              </label>
+            </li>
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+                <input class="checkbox__control" type="checkbox" name="checkbox">Молоко
+              </label>
+            </li>
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+                <input class="checkbox__control" type="checkbox" name="checkbox">Питьевая вода
+              </label>
+            </li>
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+                <input class="checkbox__control" type="checkbox" name="checkbox">Витамины
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="form__button button button--size-xs" type="submit">Отправить заявку</button>
+        <p class="form__foot-note">* — Обязательные поля</p>
+
+      </form>
+    </div>
     <section class="contacts contacts--form-page">
       <div class="contacts__wrapper container">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
     </section>
   </main>
