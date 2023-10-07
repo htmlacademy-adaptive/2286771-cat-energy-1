@@ -1,0 +1,134 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 11px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    background-color: $basic-grey;
+    padding: 0 36px 39px 36px;
+  }
+}
+
+.card__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.card--show-all {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}
+
+.card--show-all .card__title {
+  grid-column: 1/3;
+  text-align: center;
+  @media (min-width: $desktop-width) {
+    grid-column: 1/4;
+  }
+}
+
+.card__parameters {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: $special-dark-grey;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.card__title {
+  color: $special-dark-grey;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.card__description {
+  color: $special-dark-grey;
+  line-height: 16px;
+  grid-column: 1/3;
+  text-align: center;
+  @media (min-width: $desktop-width) {
+    grid-column: 1/4;
+  }
+}
+
+.card__button {
+  grid-column: 1/3;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding: 9px 93px;
+    grid-column: 1/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    padding: 9px 53px;
+  }
+}
+
+.card__button.button--show-all {
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/4;
+  }
+}
+.card__link {
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.card--additional {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    background-color: $basic-white;
+  }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    background-color: $basic-white;
+    width: 895px;
+    column-gap: 66px;
+
+  }
+}
+
+.card__value {
+  margin: 0;
+  text-align: end;
+}
+
+.card--additional .card__value {
+  justify-content: space-between;
+}
+
+.card--additional .card__title {
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
+
+}

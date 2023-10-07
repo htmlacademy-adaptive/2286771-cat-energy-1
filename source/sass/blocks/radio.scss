@@ -1,0 +1,45 @@
+.radio__label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+  display: flex;
+  align-items: center;
+  padding-bottom: 13px;
+}
+
+.radio__label:last-child {
+  padding-bottom: 19px;
+}
+
+.radio__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.radio {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
+}
+
+.radio__control--kind_checkable {
+  font-weight: inherit;
+  box-sizing: border-box;
+  appearance: none;
+  margin: 0;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $special-grey;
+  border-radius: 50%;
+  box-shadow: inset rgb(255, 255, 255) 0 0 0 6.5px;
+}
+
+.radio__control:checked {
+  background-color: rgb(104, 183, 56);
+}

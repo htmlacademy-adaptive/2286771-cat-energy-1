@@ -1,0 +1,36 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 64px;
+  }
+  @media (min-width: $desktop-width) {
+    column-gap: 81px;
+  }
+}
+
+.form__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+  grid-column: 1/3;
+}
+
+.form__button {
+  grid-column: 1/3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
+}
+
+.form__foot-note {
+  text-align: center;
+  grid-column: 1/3;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    grid-column: 2/3;
+  }
+}
