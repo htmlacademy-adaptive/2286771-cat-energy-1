@@ -17,42 +17,32 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 60px 199px;
-  gap: 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 179px;
+    row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 120px;
   }
 }
 
 .instruction__item {
   color: $special-dark-grey;
-  grid-column: 2/3;
-  position: relative;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     line-height: 24px;
     font-size: 16px;
-    grid-column: unset;
-  }
-}
-
-.instruction__item--content {
-  @media (min-width: $tablet-width) {
-    padding-top: 151px;
-  }
-}
-
-.instruction__item--preparation {
-  @media (min-width: $tablet-width) {
-    padding-top: 151px;
+    grid: unset;
   }
 }
 
@@ -61,18 +51,14 @@
   display: block;
   height: 60px;
   width: 60px;
-  position: absolute;
+  grid-column: 1/2;
   background-color: $basic-green;
   background-image: url("../img/leaf.svg");
   background-repeat: no-repeat;
   background-position: center;
-  left: -80px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    margin-top: -111px;
     margin-bottom: 31px;
-    left: 0;
   }
 }
 
@@ -81,18 +67,14 @@
   display: block;
   height: 60px;
   width: 60px;
-  position: absolute;
+  grid-column: 1/2;
   background-color: $basic-green;
   background-image: url("../img/water.svg");
   background-repeat: no-repeat;
   background-position: center;
-  left: -80px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    margin-top: -111px;
     margin-bottom: 31px;
-    left: 0;
   }
 }
 
@@ -101,7 +83,7 @@
   display: block;
   height: 60px;
   width: 60px;
-  position: absolute;
+  grid-column: 1/2;
   background-color: $basic-green;
   background-image: url("../img/tableware.svg");
   background-repeat: no-repeat;
@@ -109,9 +91,6 @@
   left: -80px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    left: 0;
-    margin-top: 31px;
     margin-bottom: 31px;
   }
 }
@@ -121,7 +100,7 @@
   display: block;
   height: 60px;
   width: 60px;
-  position: absolute;
+  grid-column: 1/2;
   background-color: $basic-green;
   background-image: url("../img/clock.svg");
   background-repeat: no-repeat;
@@ -129,9 +108,6 @@
   left: -80px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    left: 0;
-    margin-top: 31px;
     margin-bottom: 31px;
   }
 }
