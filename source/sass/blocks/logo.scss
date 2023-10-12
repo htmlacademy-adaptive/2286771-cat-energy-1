@@ -3,6 +3,10 @@
   height: 38px;
   padding-right: 55px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 15px;
+  }
 }
 
 .logo__img--text {
@@ -10,4 +14,12 @@
   height: 18px;
   display: block;
   padding-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+  }
 }

@@ -11,12 +11,10 @@
 .nav {
   position: relative;
   width: auto;
-  min-height: 65px;
-
 }
 
 .header__index--opened .site-list {
-position: absolute;
-
-
+  position: absolute;
+  background-color: $basic-white;
+  min-width: 100%;
 }
