@@ -6,10 +6,12 @@
   color: $black;
   margin: 0;
   padding-bottom: 37px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 56px;
+  }
 }
-}
+
 .form-page__intro {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -25,4 +27,3 @@
     line-height: 30px;
   }
 }
-
