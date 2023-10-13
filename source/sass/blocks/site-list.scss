@@ -36,6 +36,14 @@
     padding-bottom: 10px;
     font-weight: 400;
     border: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
