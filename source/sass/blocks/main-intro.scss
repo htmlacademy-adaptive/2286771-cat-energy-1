@@ -26,8 +26,12 @@
   margin: 0;
   padding: 0;
   text-align: center;
-}
+  padding-top: 27px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+}
+}
 .main-intro__slogan {
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-white;
@@ -37,6 +41,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  padding-top: 25px;
 }
 
 .main-intro__image {
