@@ -5,6 +5,16 @@
   font-weight: 400;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 81px;
-  margin-top: 75px;
+  padding-bottom: 36px;
+  padding-top: 25px;
+  position: relative;
+}
+
+.additional-products::before {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  position: absolute;
+  background: $special-grey-2;
+  left: 0;
 }

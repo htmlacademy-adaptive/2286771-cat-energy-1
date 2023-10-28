@@ -12,10 +12,13 @@
   }
 }
 
-.header__index {
+.header {
+  position: relative;
+}
+
+.header__wrapper {
   display: flex;
   flex-direction: column;
-  position: relative;
   padding-top: 10px;
 
 
@@ -33,10 +36,6 @@
 }
 
 .header__inner {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -50,8 +49,8 @@
 }
 
 .header__logo {
-  height: 65px;
   display: flex;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -83,8 +82,7 @@
   }
 }
 
-.header__index--closed .header__toggle::before,
-.header__inner--closed .header__toggle::before {
+.header__wrapper--closed .header__toggle::before {
   content: "";
   position: absolute;
   top: 13px;
@@ -95,16 +93,14 @@
   box-shadow: 0 8px 0 0 rgb(0, 0, 0), 0 16px 0 0 rgb(0, 0, 0);
 }
 
-.header__index--closed .header__toggle:active::before,
-.header__inner--closed .header__toggle:active::before {
+.header__wrapper--closed .header__toggle:active::before {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow:
     0 8px 0 0 rgba(0, 0, 0, 0.3),
     0 16px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-.header__index--opened .header__toggle::before,
-.header__inner--opened .header__toggle::before {
+.header__wrapper--opened .header__toggle::before {
   transform: rotate(45deg);
   background-color: rgb(0, 0, 0);
   box-shadow: none;
@@ -120,13 +116,11 @@
   }
 }
 
-.header__index--opened .header__toggle:active::before,
-.header__inner--opened .header__toggle:active::before {
+.header__wrapper--opened .header__toggle:active::before {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.header__index--opened .header__toggle::after,
-.header__inner--opened .header__toggle::after {
+.header__wrapper--opened .header__toggle::after {
   transform: rotate(-45deg);
   background-color: rgb(0, 0, 0);
   box-shadow: none;
@@ -138,21 +132,25 @@
   height: 2px;
 }
 
-.header__index--opened .header__toggle:active::after,
-.header__inner--opened .header__toggle:active::after {
+.header__wrapper--opened .header__toggle:active::after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: $mobile-width-only) {
-  .header__index--closed .site-list__item,
-  .header__inner--closed .site-list__item {
+  .header__wrapper--closed .site-list__item {
     display: none;
   }
 
-  .header__index--opened .site-list,
-  .header__inner--opened .site-list {
+  .header__wrapper--opened .site-list {
     position: absolute;
+    left: -10px;
     background-color: $basic-white;
-    width: 100%;
+    width: 100vw;
+  }
+}
+
+.header__wrapper--nojs {
+  .header__toggle {
+    display: none;
   }
 }

@@ -1,27 +1,14 @@
-let headerIndex = document.querySelector('.header__index');
-let headerInner = document.querySelector('.header__inner');
+let header = document.querySelector('.header__wrapper');
 let headerToggle = document.querySelector('.header__toggle');
 
-headerIndex.classList.remove('header__index--nojs');
+header.classList.remove('header__wrapper--nojs');
 
 headerToggle.addEventListener('click', function () {
-  if (headerIndex.classList.contains('header__index--closed')) {
-    headerIndex.classList.remove('header__index--closed');
-    headerIndex.classList.add('header__index--opened');
+  if (header.classList.contains('header__wrapper--closed')) {
+    header.classList.remove('header__wrapper--closed');
+    header.classList.add('header__wrapper--opened');
   } else {
-    headerIndex.classList.add('header__index--closed');
-    headerIndex.classList.remove('header__index--opened');
-  }
-});
-
-headerInner.classList.remove('header__inner--nojs');
-
-headerToggle.addEventListener('click', function () {
-  if (headerInner.classList.contains('header__inner--closed')) {
-    headerInner.classList.remove('header__inner--closed');
-    headerInner.classList.add('header__inner--opened');
-  } else {
-    headerInner.classList.add('header__inner--closed');
-    headerInner.classList.remove('header__inner--opened');
+    header.classList.add('header__wrapper--closed');
+    header.classList.remove('header__wrapper--opened');
   }
 });

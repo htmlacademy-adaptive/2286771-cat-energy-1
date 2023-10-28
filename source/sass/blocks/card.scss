@@ -1,7 +1,7 @@
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 11px;
+  row-gap: 13px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -11,7 +11,19 @@
   }
 }
 
+.card:not(.card--additional)::before {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  position: absolute;
+  background: $special-grey-2;
+  left: 0;
+  z-index: -2;
+}
+
 .card__wrapper {
+  padding-top: 19px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
   }
@@ -32,18 +44,41 @@
 .card--show-all .card__title {
   grid-column: 1/3;
   text-align: center;
+  padding-top: 78px;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     grid-column: 1/4;
   }
 }
 
+.card--show-all .card__title::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: 45px;
+  background-color: rgba(211, 211, 211, 1);
+  left: 132px;
+}
+
+.card--show-all .card__title::after {
+  transform: rotate(90deg);
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: 45px;
+  background-color: rgba(211, 211, 211, 1);
+  left: 132px;
+}
+
 .card__parameters {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   color: $special-dark-grey;
   line-height: 16px;
   font-size: 12px;
@@ -77,6 +112,9 @@
 
 .card__button {
   grid-column: 1/3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
@@ -91,14 +129,14 @@
 }
 
 .card__button.button--show-all {
-  padding: 0;
-
   @media (min-width: $desktop-width) {
     grid-column: 1/4;
   }
 }
 
 .card__link {
+  padding-top: 19px;
+
   @media (min-width: $tablet-width) {
     align-self: center;
   }
@@ -107,9 +145,12 @@
 .card--additional {
   display: flex;
   flex-direction: column;
+  padding-top: 13px;
+  border-top: 1px solid $special-grey-2;
 
   @media (min-width: $tablet-width) {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: $basic-white;
   }
 
@@ -134,4 +175,8 @@
   @media (min-width: $tablet-width) {
     text-align: start;
   }
+}
+
+.card--additional:last-child {
+  border-bottom: 1px solid $special-grey-2;
 }

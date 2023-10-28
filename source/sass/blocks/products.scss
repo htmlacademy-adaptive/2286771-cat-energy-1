@@ -3,3 +3,12 @@
   padding-top: 27px;
   padding-bottom: 41px;
 }
+
+.products::before {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  position: absolute;
+  background: $special-grey-2;
+  left: 0;
+}

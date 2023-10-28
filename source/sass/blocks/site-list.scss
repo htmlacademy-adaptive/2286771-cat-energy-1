@@ -24,8 +24,6 @@
   display: block;
   padding-top: 22px;
   padding-bottom: 24px;
-  border-top: 1px solid rgb(230, 230, 230);
-  border-bottom: 1px solid rgb(230, 230, 230);
 
 
   @media (min-width: $tablet-width) {
@@ -48,6 +46,15 @@
     color: $basic-white;
     padding-top: 16px;
   }
+}
+
+.site-list__item::before {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  position: absolute;
+  background: $special-grey-2;
+  left: 10px;
 }
 
 .site-list__link--inner {
@@ -83,5 +90,12 @@
         background: $basic-white;
       }
     }
+  }
+}
+
+.site__list {
+  @media ($mobile-width-only) {
+    display: block;
+    position: static;
   }
 }
