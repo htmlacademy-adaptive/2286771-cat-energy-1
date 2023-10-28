@@ -1,0 +1,19 @@
+.map iframe {
+  border: none;
+  display: block;
+  position: relative;
+}
+
+.map__logo {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  margin: 134px;
+}
+
+.map {
+  margin: auto;
+  height: 362px;
+  background-image: url("../img/map.jpg");
+  background-position: 0 0;
+}

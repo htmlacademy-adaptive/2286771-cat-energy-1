@@ -10,3 +10,11 @@
     width: 1200px;
   }
 }
+
+.container.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    margin-left: 110px;
+    margin-top: 95px;
+  }
+}
