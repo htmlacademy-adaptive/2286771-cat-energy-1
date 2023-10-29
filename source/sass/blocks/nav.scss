@@ -7,3 +7,10 @@
     width: 480px;
   }
 }
+
+.nav {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: auto;
+  }
+}

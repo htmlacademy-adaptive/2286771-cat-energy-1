@@ -55,6 +55,10 @@
   position: absolute;
   background: $special-grey-2;
   left: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .site-list__link--inner {

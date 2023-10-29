@@ -77,8 +77,8 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   color: $special-dark-grey;
   line-height: 16px;
   font-size: 12px;
@@ -179,4 +179,9 @@
 
 .card--additional:last-child {
   border-bottom: 1px solid $special-grey-2;
+}
+
+.card--additional .card__parameters {
+  display: flex;
+  justify-content: space-between;
 }

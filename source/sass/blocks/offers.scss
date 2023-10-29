@@ -216,10 +216,11 @@
   width: 32px;
   height: 10px;
   bottom: 10px;
-  left: 121px;
+  left: 153px;
 
   @media (min-width: $tablet-width) {
     bottom: 5px;
+    left: 121px;
   }
 
   @media (min-width: $desktop-width) {
