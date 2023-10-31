@@ -2,6 +2,16 @@
   margin: 0;
   padding-top: 27px;
   padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    padding-bottom: 84px;
+  }
 }
 
 .products::before {
@@ -11,4 +21,8 @@
   position: absolute;
   background: $special-grey-2;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

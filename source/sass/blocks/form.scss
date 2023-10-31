@@ -20,6 +20,9 @@
 
 .form__button {
   grid-column: 1/3;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: none;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;

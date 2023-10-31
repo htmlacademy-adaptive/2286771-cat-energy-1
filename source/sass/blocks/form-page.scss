@@ -6,9 +6,16 @@
   color: $black;
   margin: 0;
   padding-bottom: 37px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-bottom: 56px;
+    padding-top: 73px;
   }
 }
 
@@ -19,11 +26,24 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 24px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 66px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.form-page::before {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  position: absolute;
+  background: $special-grey-2;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

@@ -3,7 +3,24 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
-  padding-bottom: 36px;
+  padding-bottom: 37px;
+  padding-top: 24px;
+  position: relative;
+}
+
+.comment__legend::after {
+  content: "";
+  width: 100vw;
+  height: 2px;
+  position: absolute;
+  background: $basic-green;
+  top: 40px;
+  left: 141px;
+
+  @media (min-width: $tablet-width) {
+    top: 44px;
+    left: 382px;
+  }
 }
 
 .comment__textarea {
@@ -32,4 +49,5 @@
   color: $special_dark-grey;
   text-align: start;
   padding-top: 9px;
+  padding-left: 15px;
 }

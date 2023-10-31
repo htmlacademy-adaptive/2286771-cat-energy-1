@@ -4,6 +4,23 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 35px;
+  padding-top: 26px;
+  position: relative;
+}
+
+.form-contacts__legend::after {
+  content: "";
+  width: 100vw;
+  height: 2px;
+  position: absolute;
+  background: $basic-green;
+  top: 44px;
+  left: 221px;
+
+  @media (min-width: $tablet-width) {
+    top: 44px;
+    left: 382px;
+  }
 }
 
 .form-contacts__label {
@@ -28,6 +45,7 @@
 .form-contacts__item {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .form-contacts__control {
@@ -35,13 +53,39 @@
   font-family: "Oswald", "Arial", sans-serif;
   flex-grow: 1;
   line-height: 18px;
+  text-transform: uppercase;
   padding: 0;
   margin: 0;
-  margin-bottom: 14px;
   padding-top: 14px;
   padding-left: 20px;
   padding-bottom: 13px;
   border: 1px solid rgb(231, 231, 231);
+}
+
+.form-contacts__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.form-contacts__item--email::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("../img/email.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 13px;
+  right: 12px;
+}
+
+.form-contacts__item--phone::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("../img/phone.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 13px;
+  right: 12px;
 }
 
 .form-contacts {
