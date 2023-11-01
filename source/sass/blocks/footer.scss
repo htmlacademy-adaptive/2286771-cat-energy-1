@@ -9,10 +9,14 @@
   display: flex;
   padding-bottom: 20px;
 
-
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0;
   }
+}
+
+.footer__logo .logo__img {
+  padding: 0;
 }
 
 .footer__social {

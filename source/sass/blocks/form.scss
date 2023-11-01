@@ -26,6 +26,11 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
   }
 }
 

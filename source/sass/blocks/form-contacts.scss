@@ -6,6 +6,13 @@
   margin-bottom: 35px;
   padding-top: 26px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 75px;
+    padding-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form-contacts__legend::after {
@@ -18,8 +25,20 @@
   left: 221px;
 
   @media (min-width: $tablet-width) {
-    top: 44px;
-    left: 382px;
+    top: 95px;
+    left: 551px;
+  }
+}
+
+.form-contacts__legend::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 100vw;
+    height: 2px;
+    position: absolute;
+    background: $basic-green;
+    top: 95px;
+    right: 553px;
   }
 }
 

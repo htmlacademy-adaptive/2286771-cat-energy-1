@@ -6,6 +6,13 @@
   padding-bottom: 37px;
   padding-top: 24px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 65px;
+    padding-bottom: 76px;
+  }
 }
 
 .comment__legend::after {
@@ -18,8 +25,20 @@
   left: 141px;
 
   @media (min-width: $tablet-width) {
-    top: 44px;
-    left: 382px;
+    top: 89px;
+    left: 220px;
+  }
+}
+
+.comment__legend::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 100vw;
+    height: 2px;
+    position: absolute;
+    background: $basic-green;
+    top: 89px;
+    right: 251px;
   }
 }
 
