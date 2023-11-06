@@ -1,14 +1,15 @@
 .header--index::before {
   @media (min-width: $desktop-width) {
-    background-image: url("../img/index-cat-background.jpg"), linear-gradient(to right, rgba(80, 155, 34, 0.85), rgba(70, 144, 24, 0.85));
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.jpg"), linear-gradient(to right, #54555a 50%, #434248);
     content: "";
-    height: 400px;
-    width: 50%;
-    display: block;
-    background-repeat: no-repeat, no-repeat;
-    background-position: top right, top;
     position: absolute;
     right: 0;
+    display: block;
+    height: 694px;
+    width: 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, top right;
+    z-index: -2;
   }
 }
 
@@ -17,11 +18,12 @@
 }
 
 .header__wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 54px;
   padding-top: 10px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 0;
@@ -47,7 +49,7 @@
 
 .header__logo {
   display: flex;
-  padding-bottom: 24px;
+  grid-column: 1/2;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -59,12 +61,12 @@
 }
 
 .header__toggle {
-  position: absolute;
-  padding: 0;
-  right: 0;
+  position: relative;
+  grid-column: 2/3;
   display: block;
   width: 54px;
   height: 47px;
+  padding: 0;
   background-color: rgb(255, 255, 255);
   cursor: pointer;
   border: none;
@@ -140,9 +142,10 @@
 
   .header__wrapper--opened .site-list {
     position: absolute;
-    left: -10px;
-    background-color: $basic-white;
+    left: 0;
     width: 100vw;
+    background-color: $basic-white;
+    border: 2px solid rgb(255, 0, 0);
   }
 }
 
@@ -150,4 +153,8 @@
   .header__toggle {
     display: none;
   }
+}
+
+.header__wrapper--nojs .site-list {
+  position: static;
 }

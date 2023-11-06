@@ -1,5 +1,6 @@
 .instruction {
   margin-bottom: 49px;
+  margin-top: 71px;
 }
 
 .instruction__title {
@@ -11,6 +12,11 @@
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .instruction__list {
@@ -51,19 +57,19 @@
 
 .instruction__item::after {
   @media (min-width: $tablet-width) {
+    content: counter(my-counter);
+    counter-increment: my-counter;
     position: absolute;
-    color: $basic-grey;
-    text-align: center;
+    left: 119px;
+    display: block;
+    width: 112px;
+    height: 280px;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     font-weight: 400;
     line-height: 280px;
-    display: block;
-    left: 119px;
-    content: counter(my-counter);
-    width: 30px;
-    height: 32px;
-    counter-increment: my-counter;
+    text-align: center;
+    color: $basic-grey;
     z-index: -1;
   }
 }
@@ -116,6 +122,7 @@
 
 .instruction__item--use::before {
   content: "";
+  left: -80px;
   display: block;
   height: 60px;
   width: 60px;
@@ -124,7 +131,6 @@
   background-image: url("../img/tableware.svg");
   background-repeat: no-repeat;
   background-position: center;
-  left: -80px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 31px;
@@ -141,6 +147,7 @@
 .instruction__item--result::before {
   content: "";
   display: block;
+  left: -80px;
   height: 60px;
   width: 60px;
   grid-column: 1/2;
@@ -148,7 +155,6 @@
   background-image: url("../img/clock.svg");
   background-repeat: no-repeat;
   background-position: center;
-  left: -80px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 31px;

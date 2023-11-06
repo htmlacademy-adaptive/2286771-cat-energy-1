@@ -16,13 +16,18 @@
 
 .products::before {
   content: "";
+  position: absolute;
+  right: 0;
   width: 100vw;
   height: 1px;
-  position: absolute;
   background: $special-grey-2;
-  left: 0;
+  box-shadow: 100vw 0 0 $special-grey-2;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.products {
+  position: relative;
 }

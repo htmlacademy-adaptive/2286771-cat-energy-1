@@ -4,15 +4,20 @@
   grid-template-columns: 1fr 280px 1fr;
 }
 
-.main-intro__wrapper::before {
-  background-image: url("../img/index-cat-background.jpg"), linear-gradient(to right, rgba(80, 155, 34, 0.85), rgba(70, 144, 24, 0.85));
-  content: "";
-  height: 302px;
-  display: block;
+.main-intro::before {
+  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile.jpg"), linear-gradient(to right, #54555a 50%, #434248 50%);
   background-repeat: no-repeat, no-repeat;
   background-position: top center, top;
-  grid-row: 1/3;
-  grid-column: 1/4;
+  content: "";
+  display: block;
+  height: 302px;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-intro__title {
@@ -49,11 +54,13 @@
   display: block;
   grid-row: 3/5;
   grid-column: 2/3;
+  z-index: -2;
 }
 
 .main-intro__link {
   grid-row: 5/6;
   grid-column: 2/3;
+  padding: 10px 44px 8px 44px;
 }
 
 @media (min-width: $tablet-width) {
@@ -99,31 +106,32 @@
 @media (min-width: $desktop-width) {
   .main-intro__wrapper {
     display: block;
-    margin-bottom: 82px;
+    margin-bottom: 267px;
     position: relative;
   }
 
   .main-intro__title {
     width: 414px;
-    margin-bottom: 40px;
     margin-left: 80px;
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
+    padding-top: 111px;
   }
 
   .main-intro__slogan {
-    margin-bottom: 52px;
+    padding-bottom: 52px;
   }
 
   .main-intro__image {
-    bottom: 144px;
     position: absolute;
     right: 400px;
+    bottom: 144px;
   }
 
   .main-intro__link {
     margin: 0;
     margin-left: 80px;
+    padding: 14px 26px 14px 26px;
   }
 }

@@ -33,6 +33,8 @@
 .radio {
   margin: 0;
   padding: 0;
+  position: relative;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     border: 1px solid rgb(231, 231, 231);
@@ -51,7 +53,7 @@
   margin-right: 15px;
   width: 30px;
   height: 30px;
-  border: 2px solid $special-grey;
+  border: 2px solid $special-grey-2;
   border-radius: 50%;
   box-shadow: inset rgb(255, 255, 255) 0 0 0 6.5px;
 }
@@ -62,11 +64,12 @@
 
 .radio::before {
   content: "";
+  position: absolute;
+  right: 0;
   width: 100vw;
   height: 1px;
-  position: absolute;
   background: $special-grey-2;
-  left: 0;
+  box-shadow: 100vw 0 0 $special-grey-2;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -75,11 +78,13 @@
 
 .radio::after {
   content: "";
+  position: absolute;
+  right: 0;
   width: 100vw;
   height: 1px;
-  position: absolute;
   background: $special-grey-2;
-  left: 0;
+  box-shadow: 100vw 0 0 $special-grey-2;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     display: none;

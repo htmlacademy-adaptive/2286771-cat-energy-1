@@ -39,20 +39,22 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    margin: 0;
+    padding-bottom: 59px;
   }
 }
 
 .offers__item--slim::before {
   content: "";
-  display: block;
   position: absolute;
   top: 21px;
   left: 29px;
+  display: block;
+  width: 36px;
+  height: 50px;
   background-image: url("../img/cat-slim.svg");
   background-repeat: no-repeat;
   background-size: 36px 50px;
-  width: 36px;
-  height: 50px;
   z-index: 3;
 
   @media (min-width: $tablet-width) {
@@ -74,15 +76,15 @@
 
 .offers__item--pro::before {
   content: "";
-  display: block;
   position: absolute;
   top: 35px;
   left: 13px;
+  display: block;
+  width: 67px;
+  height: 28px;
   background-image: url("../img/cat-pro.svg");
   background-repeat: no-repeat;
   background-size: 67px 28px;
-  width: 67px;
-  height: 28px;
   z-index: 3;
 
   @media (min-width: $tablet-width) {
@@ -104,13 +106,14 @@
 
 .offers__item::after {
   content: "";
-  display: block;
+
   position: absolute;
   left: 22px;
   top: 24px;
-  background-color: $basic-green;
+  display: block;
   width: 50px;
   height: 50px;
+  background-color: $basic-green;
   border-radius: 50%;
   z-index: 2;
 
@@ -126,7 +129,6 @@
   @media (min-width: $desktop-width) {
     left: 52px;
     top: 47px;
-
     width: 100px;
     height: 100px;
   }
@@ -182,9 +184,9 @@
   position: absolute;
   bottom: 23px;
   display: block;
-  background: rgb(217, 217, 217);
   height: 1px;
   width: 240px;
+  background: rgb(217, 217, 217);
 
   @media (min-width: $tablet-width) {
     display: none;

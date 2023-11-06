@@ -13,11 +13,12 @@
 
 .card:not(.card--additional)::before {
   content: "";
+  position: absolute;
+  right: 0;
   width: 100vw;
   height: 1px;
-  position: absolute;
   background: $special-grey-2;
-  left: 0;
+  box-shadow: 100vw 0 0 $special-grey-2;
   z-index: -2;
 
   @media (min-width: $tablet-width) {
@@ -60,11 +61,12 @@
 .card--show-all .card__title::before {
   content: "";
   position: absolute;
+  top: 45px;
+  left: 132px;
   width: 30px;
   height: 2px;
-  top: 45px;
   background-color: rgba(211, 211, 211, 1);
-  left: 132px;
+
 
   @media (min-width: $tablet-width) {
     left: 110px;
@@ -79,11 +81,11 @@
   transform: rotate(90deg);
   content: "";
   position: absolute;
+  top: 45px;
+  left: 132px;
   width: 30px;
   height: 2px;
-  top: 45px;
   background-color: rgba(211, 211, 211, 1);
-  left: 132px;
 
   @media (min-width: $tablet-width) {
     left: 110px;

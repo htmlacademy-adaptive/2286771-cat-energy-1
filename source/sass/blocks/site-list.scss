@@ -50,11 +50,11 @@
 
 .site-list__item::before {
   content: "";
+  position: absolute;
+  left: 10px;
   width: 100vw;
   height: 1px;
-  position: absolute;
   background: $special-grey-2;
-  left: 10px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -112,7 +112,7 @@
 }
 
 .site__list {
-  @media ($mobile-width-only) {
+  @media (min-width: $mobile-width-only) {
     display: block;
     position: static;
   }

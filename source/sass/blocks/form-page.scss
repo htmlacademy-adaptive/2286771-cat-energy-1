@@ -35,13 +35,17 @@
   }
 }
 
+.form-page {
+  position: relative;
+}
+
 .form-page::before {
   content: "";
+  position: absolute;
+  right: 0;
   width: 100vw;
   height: 1px;
-  position: absolute;
   background: $special-grey-2;
-  left: 0;
 
   @media (min-width: $tablet-width) {
     display: none;
