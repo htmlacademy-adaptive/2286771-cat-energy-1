@@ -3,41 +3,47 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 35px;
-  padding-top: 26px;
+  padding-bottom: 35px;
   position: relative;
-  background-color: rgb(255, 255, 255);
-  width: 201px;
+  background: rgb(255, 255, 255);
+  box-shadow: -20px 0 0 0 rgb(255, 255, 255), 14px 0 0 0 rgb(255, 255, 255);
+  width: fit-content;
 
   @media (min-width: $tablet-width) {
-    padding-top: 71px;
     padding-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
-    width: 559px;
+    box-shadow: -20px 0 0 0 rgb(255, 255, 255), 35px 0 0 0 rgb(255, 255, 255);
   }
 }
 
-.form-contacts {
+fieldset.form-contacts {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .form-contacts__legend::before {
   content: "";
   position: absolute;
   right: 0;
-  top: 40px;
+  top: 14px;
   display: block;
   width: 100vw;
   height: 2px;
-  background: rgb(255, 255, 255);
-  box-shadow: 100vw 0 0 $basic-green, -220px -2px 0 $basic-green;
+  background: $basic-green;
+  box-shadow: 100vw 0 0 $basic-green;
   z-index: -2;
 
   @media (min-width: $tablet-width) {
-    top: 91px;
-    box-shadow: 100vw 0 0 $basic-green, -592px -2px 0 $basic-green;
+    top: 18px;
   }
 }
 

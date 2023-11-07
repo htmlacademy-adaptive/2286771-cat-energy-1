@@ -6,22 +6,30 @@
   position: relative;
   background-color: rgb(255, 255, 255);
   z-index: 2;
-  padding: 24px 22px 37px 20px;
-  margin-left: -20px;
-  margin-right: -22px;
+  padding: 0 0 37px 0;
+  box-shadow: -20px 0 0 0 rgb(255, 255, 255), 22px 0 0 0 rgb(255, 255, 255);
+  width: fit-content;
 
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 65px 38px 76px 39px;
-    margin-left: -39px;
-    margin-right: -38px;
+    padding: 0 0 76px 0;
+    box-shadow: -20px 0 0 0 rgb(255, 255, 255), 38px 0 0 0 rgb(255, 255, 255);
   }
 }
 
-.comment {
+fieldset.comment {
   position: relative;
+  margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .comment::before {
