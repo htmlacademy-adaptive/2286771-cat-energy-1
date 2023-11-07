@@ -1,24 +1,29 @@
 .copyright__link::before {
-  width: 280px;
-  height: 34px;
   content: "";
+  display: inline-block;
+  width: 113px;
+  height: 40px;
   background-image: url("../img/logo-htmlacademy-text.svg");
   background-repeat: no-repeat;
-  display: inline-block;
   background-position: left center;
 }
 
 .copyright__link::after {
-  width: 27px;
-  height: 34px;
   content: "";
+  display: inline-block;
+  width: 28px;
+  height: 40px;
   background-image: url("../img/logo-html-image.svg");
   background-repeat: no-repeat;
-  display: inline-block;
 }
 
 .copyright__link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

@@ -4,30 +4,41 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  width: 132px;
   justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .social__link {
   display: block;
-  width: 28px;
-  height: 22px;
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    color: rgb(255, 0, 0);
+  }
 }
 
 .social__link--vkontakte {
-  background-image: url("../../img/vkontakte.svg");
+  background: url("../img/vkontakte.svg") no-repeat center;
 }
 
 .social__link--youtube {
-  background-image: url("../../img/youtube.svg");
+  background: url("../img/youtube.svg") no-repeat center;
 }
 
 .social__link--telegram {
-  background-image: url("../../img/telegram.svg");
+  background: url("../img/telegram.svg") no-repeat center;
 }
 
 .social__item {
   margin-right: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 .social__item:nth-child(3n) {

@@ -9,23 +9,24 @@
 </head>
 
 <body class="page-body">
-  <header class="header">
-    <div class="header__inner container">
-      <a class="header__logo logo" href="#">
+  <header class="header header--inner">
+    <div class="header__wrapper container header__wrapper--closed header__wrapper--nojs">
+      <a class="header__logo logo" href="index.html">
         <img class="logo__img logo__img--icon" src="img/logo-image.svg" width="34" height="38"
           alt="Логотип магазина Кэт энерджи.">
         <img class="logo__img logo__img--text" src="img/logo-text.svg" width="101" height="18"
           alt="Логотип магазина Кэт энерджи.">
       </a>
+      <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
       <nav class="nav">
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--inner" href="index.html">
               Главная
             </a>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link site-list__link--inner" href="catalog.html" aria-current="page">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--inner site-list__item--active" href="catalog.html" aria-current="page">
               Каталог продукции
             </a>
           </li>
@@ -38,6 +39,7 @@
       </nav>
     </div>
   </header>
+
   <main class="main">
     <div class="main__inner container">
       <section class="products">
@@ -176,57 +178,57 @@
           </li>
         </ul>
       </section>
-<div class="main__additional-wrapper">
-      <section class="additional-products">
-        <h2 class="additional-products__title">Дополнительные товары</h2>
-        <ul class="additional-products__list additional-product-list">
-          <li class="additional-product-list__card card card--additional">
-            <h3 class="card__title">Сахарозаменитель</h3>
-            <dl class="card__parameters">
-              <dt class="visually-hidden">Количество</dt>
-              <dd class="card__value">1 упаковка (100&nbsp;г)</dd>
-              <dt class="visually-hidden">Цена</dt>
-              <dd class="card__value">200&nbsp;₽</dd>
-            </dl>
-            <a class="card__button button button--size-xs" href="#">Заказать</a>
-          </li>
-          <li class="additional-product-list__card card card--additional">
-            <h3 class="card__title">Питьевая вода</h3>
-            <dl class="card__parameters">
-              <dt class="visually-hidden">Количество</dt>
-              <dd class="card__value">5&nbsp;л</dd>
-              <dt class="visually-hidden">Цена</dt>
-              <dd class="card__value">50&nbsp;₽</dd>
-            </dl>
-            <a class="card__button button button--size-xs" href="#">Заказать</a>
-          </li>
-          <li class="additional-product-list__card card card--additional">
-            <h3 class="card__title card__title--additional">Молоко</h3>
-            <dl class="card__parameters card__parameters--additional">
-              <dt class="visually-hidden">Количество</dt>
-              <dd class="card__value card__value--additional">1&nbsp;л</dd>
-              <dt class="visually-hidden">Цена</dt>
-              <dd class="card__value card__value--additional">200&nbsp;₽</dd>
-            </dl>
-            <a class="card__button button button--size-xs" href="#">Заказать</a>
-          </li>
-          <li class="additional-product-list__card card card--additional">
-            <h3 class="card__title card__title--additional">Витамины</h3>
-            <dl class="card__parameters">
-              <dt class="visually-hidden">Количество</dt>
-              <dd class="card__value">1 упаковка (30&nbsp;г)</dd>
-              <dt class="visually-hidden">Цена</dt>
-              <dd class="card__value">300&nbsp;₽</dd>
-            </dl>
-            <a class="card__button button button--size-xs" href="#">Заказать</a>
-          </li>
-        </ul>
-      </section>
+      <div class="main__additional-wrapper">
+        <section class="additional-products">
+          <h2 class="additional-products__title">Дополнительные товары</h2>
+          <ul class="additional-products__list additional-product-list">
+            <li class="additional-product-list__card card card--additional">
+              <h3 class="card__title">Сахарозаменитель</h3>
+              <dl class="card__parameters">
+                <dt class="visually-hidden">Количество</dt>
+                <dd class="card__value">1 упаковка (100&nbsp;г)</dd>
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="card__value">200&nbsp;₽</dd>
+              </dl>
+              <a class="card__button button button--size-xs" href="#">Заказать</a>
+            </li>
+            <li class="additional-product-list__card card card--additional">
+              <h3 class="card__title">Питьевая вода</h3>
+              <dl class="card__parameters">
+                <dt class="visually-hidden">Количество</dt>
+                <dd class="card__value">5&nbsp;л</dd>
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="card__value">50&nbsp;₽</dd>
+              </dl>
+              <a class="card__button button button--size-xs" href="#">Заказать</a>
+            </li>
+            <li class="additional-product-list__card card card--additional">
+              <h3 class="card__title card__title--additional">Молоко</h3>
+              <dl class="card__parameters card__parameters--additional">
+                <dt class="visually-hidden">Количество</dt>
+                <dd class="card__value card__value--additional">1&nbsp;л</dd>
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="card__value card__value--additional">200&nbsp;₽</dd>
+              </dl>
+              <a class="card__button button button--size-xs" href="#">Заказать</a>
+            </li>
+            <li class="additional-product-list__card card card--additional">
+              <h3 class="card__title card__title--additional">Витамины</h3>
+              <dl class="card__parameters">
+                <dt class="visually-hidden">Количество</dt>
+                <dd class="card__value">1 упаковка (30&nbsp;г)</dd>
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="card__value">300&nbsp;₽</dd>
+              </dl>
+              <a class="card__button button button--size-xs" href="#">Заказать</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="promotion">
-        <h2 class="visually-hidden">Промо-акция</h2>
-        <p class="promotion__description">Закажите все и получите чехол для кота в подарок!</p>
-      </section>
+        <section class="promotion">
+          <h2 class="visually-hidden">Промо-акция</h2>
+          <p class="promotion__description">Закажите все и получите чехол для кота в подарок!</p>
+        </section>
       </div>
     </div>
     <section class="contacts contacts--inner-page">
@@ -234,6 +236,13 @@
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта.</h2>
+      <img class="map__logo" src="img/map-pin.svg" width="57" height="53" alt="Карта.">
+      <iframe class="map__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6024905379045!2d30.321953058721927!3d59.93873799740533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1697449915335!5m2!1sru!2sru"
+        style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
 
@@ -267,4 +276,7 @@
       </section>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
+
+</html>

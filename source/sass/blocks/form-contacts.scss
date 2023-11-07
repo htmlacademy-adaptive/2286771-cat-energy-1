@@ -3,7 +3,48 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 35px;
+  padding-bottom: 35px;
+  position: relative;
+  background: rgb(255, 255, 255);
+  box-shadow: -20px 0 0 0 rgb(255, 255, 255), 14px 0 0 0 rgb(255, 255, 255);
+  width: fit-content;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+    box-shadow: -20px 0 0 0 rgb(255, 255, 255), 35px 0 0 0 rgb(255, 255, 255);
+  }
+}
+
+fieldset.form-contacts {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.form-contacts__legend::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 14px;
+  display: block;
+  width: 100vw;
+  height: 2px;
+  background: $basic-green;
+  box-shadow: 100vw 0 0 $basic-green;
+  z-index: -2;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+  }
 }
 
 .form-contacts__label {
@@ -28,6 +69,7 @@
 .form-contacts__item {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .form-contacts__control {
@@ -35,16 +77,37 @@
   font-family: "Oswald", "Arial", sans-serif;
   flex-grow: 1;
   line-height: 18px;
+  text-transform: uppercase;
   padding: 0;
   margin: 0;
-  margin-bottom: 14px;
   padding-top: 14px;
   padding-left: 20px;
   padding-bottom: 13px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid rgb(231, 231, 231);
 }
 
-.form-contacts {
-  margin: 0;
-  padding: 0;
+.form-contacts__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.form-contacts__item--email::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 13px;
+  right: 12px;
+  background: url("../img/email.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.form-contacts__item--phone::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 13px;
+  right: 12px;
+  background: url("../img/phone.svg") no-repeat;
+  width: 20px;
+  height: 20px;
 }

@@ -1,6 +1,7 @@
 .container {
   margin: 0 auto;
-  width: 281px;
+  width: 280px;
+
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -8,5 +9,27 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+  }
+}
+
+.container.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    margin-left: 110px;
+    margin-top: 95px;
+  }
+}
+
+.container--padding {
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 38px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
   }
 }
