@@ -13,8 +13,14 @@
   <header class="header header--index">
     <div class="header__wrapper container header__wrapper--closed header__wrapper--nojs">
       <a class="header__logo logo" href="index.html">
-        <img class="logo__img logo__img--icon" src="img/logo-image.svg" width="34" height="38"
-          alt="Логотип магазина Кэт энерджи.">
+        <div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-image-desktop.svg" width="71" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg" width="61" height="51">
+          <img class="logo__img logo__img--icon" src="img/logo-image.svg" width="34" height="38"
+            alt="Логотип магазина Кэт энерджи.">
+        </picture>
+        </div>
         <img class="logo__img logo__img--text" src="img/logo-text.svg" width="101" height="18"
           alt="Логотип магазина Кэт энерджи.">
       </a>
@@ -48,7 +54,17 @@
           питание для котов</h1>
         <h2 class="visually-hidden">Промо</h2>
         <p class="main-intro__slogan">Занялся собой? Займись котом!</p>
-        <img class="main-intro__image" src="img/index-can.png" width="280" height="270" alt="Упаковка с кормом.">
+
+        <div class="main-intro__image-wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop-2x.png 2x"
+              width="552" height="499">
+            <source media="(min-width: 768px)" srcset="img/catalog-fish-large.png, img/index-can-tablet.png 2x"
+              width="709" height="609">
+            <img class="main-intro__image" src="img/index-can.png" srcset="img/index-can-2x.png 2x" width="280"
+              height="270" alt="Упаковка с кормом.">
+          </picture>
+        </div>
         <a class="main-intro__link button button--size-xs" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -99,17 +115,40 @@
 
         <div class="slider__wrapper-secondary">
           <dl class="slider__parameters slider-parameters">
-            <dt class="slider__number">5 кг</dt>
-            <dd class="slider__description">Cнижение веса</dd>
-            <dt class="slider__number">60 дней</dt>
-            <dd class="slider__description">Затрачено времени</dd>
+
+            <div class="slider-parameters__wrapper">
+              <dt class="slider__number">5 кг</dt>
+              <dd class="slider__description"><span class="slider__span">Cнижение веса</span></dd>
+            </div>
+            <div class="slider-parameters__wrapper">
+              <dt class="slider__number">60 дней</dt>
+              <dd class="slider__description"><span class="slider__span">Затрачено времени</span></dd>
+            </div>
           </dl>
-          <p class="slider__costs">Затраты на питание: 15 000 руб.</p>
+          <p class="slider__costs">Затраты на питание:
+            <span>15 000 руб.</span>
+          </p>
         </div>
-        <button class="slider__button slider__button--prev" type="button"><span
-            class="visually-hidden">До</span></button>
-        <button class="slider__button slider__button--next" type="button"><span
-            class="visually-hidden">После</span></button>
+        <div class="slider__compare">
+          <div class="slider__before-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-tablet-before-1x.png, img/cat-tablet-before-2x.png 2x"
+                width="560" height="512">
+              <img class="slider__img-before" src="img/cat-mobile-before-1x.png" width="280" height="256"
+                alt="Кот до диеты.">
+            </picture>
+          </div>
+          <div class="slider__after-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-tablet-after-1x.png, img/cat-tablet-after-2x.png 2x"
+                width="560" height="512">
+              <img class="slider__img-after" src="img/cat-mobile-after-1x.png" srcset="img/cat-mobile-after-2x.png 2x"
+                width="280" height="256" alt="Кот после диеты.">
+            </picture>
+          </div>
+          <div class="slider__bar"><span class="visually-hidden">Разделительная полоса.</span></div>
+          <button class="slider__button" type="button"><span class="visually-hidden">Ползунок.</span></button>
+        </div>
       </div>
     </section>
     <section class="contacts contacts--main-page">
