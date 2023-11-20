@@ -12,8 +12,14 @@
   <header class="header header--inner">
     <div class="header__wrapper container header__wrapper--closed header__wrapper--nojs">
       <a class="header__logo logo" href="index.html">
-        <img class="logo__img logo__img--icon" src="img/logo-image.svg" width="34" height="38"
-          alt="Логотип магазина Кэт энерджи.">
+        <div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-image-desktop.svg" width="71" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg" width="61" height="51">
+            <img class="logo__img logo__img--icon" src="img/logo-image.svg" width="34" height="38"
+              alt="Логотип магазина Кэт энерджи.">
+          </picture>
+          </div>
         <img class="logo__img logo__img--text" src="img/logo-text.svg" width="101" height="18"
           alt="Логотип магазина Кэт энерджи.">
       </a>
