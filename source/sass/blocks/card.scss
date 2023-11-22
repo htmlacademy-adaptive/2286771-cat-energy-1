@@ -163,6 +163,8 @@
   @media (min-width: $tablet-width) {
     align-items: center;
     width: 248px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
