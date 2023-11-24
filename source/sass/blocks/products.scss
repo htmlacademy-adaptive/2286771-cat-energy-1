@@ -11,21 +11,6 @@
   }
 }
 
-.products::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100vw;
-  height: 1px;
-  background: $special-grey-2;
-  box-shadow: 100vw 0 0 $special-grey-2;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .products {
   position: relative;
   z-index: -2;

@@ -35,7 +35,6 @@
 .form-page {
   position: relative;
   padding-top: 27px;
-  z-index: -2;
 
   @media (min-width: $tablet-width) {
     padding-top: 64px;
@@ -43,19 +42,5 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 73px;
-  }
-}
-
-.form-page::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100vw;
-  height: 1px;
-  background: $special-grey-2;
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }

@@ -186,6 +186,7 @@
 
 .card__link {
   padding-top: 19px;
+  object-fit: contain;
 
   @media (min-width: $tablet-width) {
     align-self: center;
@@ -221,6 +222,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 7px;
+    border-bottom: 1px solid rgb(205, 205, 205);
   }
 }
 
@@ -264,7 +266,6 @@
   height: 100px;
   display: block;
   margin: 0 auto;
-  object-fit: contain;
 
   @media (min-width: $tablet-width) {
     width: 168px;
@@ -277,21 +278,6 @@
     position: relative;
     padding-bottom: 9px;
     padding-top: 7px;
-  }
-}
-
-.card__term::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 251px;
-    height: 1px;
-    background-color: rgb(205, 205, 205);
-    bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 169px;
+    border-bottom: 1px solid rgb(205, 205, 205);
   }
 }
