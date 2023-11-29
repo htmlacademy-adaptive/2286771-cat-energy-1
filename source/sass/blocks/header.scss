@@ -16,11 +16,6 @@
 .header {
   position: relative;
   z-index: 2;
-  border-bottom: 1px solid $special-grey-2;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
 }
 
 .header__wrapper {
@@ -152,7 +147,7 @@
   .header__wrapper--opened .site-list {
     position: absolute;
     left: 0;
-    top: 45px;
+    top: 100%;
     width: 100vw;
     background-color: $basic-white;
     border: 2px solid rgb(255, 0, 0);
