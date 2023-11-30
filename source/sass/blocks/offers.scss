@@ -202,6 +202,10 @@
   padding-left: 19px;
   position: relative;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-left: 0;
