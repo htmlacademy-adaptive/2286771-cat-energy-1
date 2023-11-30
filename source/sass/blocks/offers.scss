@@ -62,7 +62,7 @@
     right: 12px;
     width: 140px;
     height: 194px;
-    background-image: url("../img/icons.svg#cat-slim-tablet");
+    background: url("../img/icons.svg#cat-slim")/140px 194px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +70,7 @@
     left: 67px;
     width: 70px;
     height: 97px;
-    background-image: url("../img/icons.svg#cat-slim-desktop");
+    background-image: url("../img/icons.svg#cat-slim");
   }
 }
 
@@ -92,7 +92,7 @@
     right: 12px;
     width: 268px;
     height: 112px;
-    background-image: url("../img/icons.svg#cat-pro-tablet");
+    background-image: url("../img/icons.svg#cat-pro");
   }
 
   @media (min-width: $desktop-width) {
@@ -100,7 +100,7 @@
     left: 33px;
     width: 134px;
     height: 56px;
-    background-image: url("../img/icons.svg#cat-pro-desktop");
+    background-image: url("../img/icons.svg#cat-pro");
   }
 }
 

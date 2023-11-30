@@ -228,6 +228,7 @@
 
 .card--additional .card__value {
   justify-content: space-between;
+  border-bottom: none;
 }
 
 .card--additional .card__title {
@@ -270,6 +271,11 @@
   @media (min-width: $tablet-width) {
     width: 168px;
     height: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
   }
 }
 
