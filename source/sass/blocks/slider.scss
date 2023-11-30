@@ -186,6 +186,25 @@
   justify-content: right;
 }
 
+.slider__range {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  height: 100%;
+  margin: 0;
+
+}
+.slider__line {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4px;
+  transform: translateX(50%);
+  background: grey;
+  pointer-events: none;
+}
 .slider__bar {
   position: absolute;
   right: 50%;
