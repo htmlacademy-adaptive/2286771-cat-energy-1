@@ -32,7 +32,20 @@
   padding-top: 14px;
   padding-left: 20px;
   padding-bottom: 13px;
-  outline-color: 1px solid rgb(231, 231, 231);
+  outline: 1px solid rgb(232, 232, 232);
+  border: none;
+
+  &:hover {
+    outline: 1px solid rgb(204, 204, 204);
+  }
+
+  &:focus {
+    outline: 2px solid rgb(69, 69, 69);
+  }
+
+  &:disabled {
+    outline: 2px solid rgb(255, 128, 128);
+  }
 }
 
 .questionary__item:last-child {

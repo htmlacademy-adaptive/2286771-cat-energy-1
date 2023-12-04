@@ -19,5 +19,9 @@
 
 .button--show-all {
   background-color: $basic-grey;
-  color: $black;
+  color: $special-dark-grey;
+
+  &:active {
+    color: rgb(68, 68, 68, 0.6);
+  }
 }

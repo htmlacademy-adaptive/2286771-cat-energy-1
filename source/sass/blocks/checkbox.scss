@@ -112,6 +112,10 @@ fieldset.checkbox {
   height: 30px;
   border: 2px solid $special-grey;
   background: rgb(255, 255, 255);
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__control:checked {
