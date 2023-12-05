@@ -196,6 +196,24 @@
   opacity: 0;
 }
 
+.slider__range:hover + .slider__line::after {
+  background: $basic-green;
+}
+
+.slider__range:hover + .slider__line {
+  background: $basic-green;
+}
+
+.slider__range:active + .slider__line::after {
+  background: $basic-green;
+  opacity: 0.6;
+}
+
+.slider__range:active + .slider__line {
+  background: $basic-green;
+  opacity: 0.6;
+}
+
 .slider__line {
   grid-column: 1/2;
   grid-row: 1/2;
