@@ -15,6 +15,7 @@
 
 .header {
   position: relative;
+  z-index: 2;
 }
 
 .header__wrapper {
@@ -146,7 +147,7 @@
   .header__wrapper--opened .site-list {
     position: absolute;
     left: 0;
-    top: 45px;
+    top: 100%;
     width: 100vw;
     background-color: $basic-white;
     border: 2px solid rgb(255, 0, 0);

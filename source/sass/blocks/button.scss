@@ -7,6 +7,10 @@
   background-color: $basic-green;
   text-align: center;
 
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     line-height: 20px;
     font-size: 16px;
@@ -15,5 +19,9 @@
 
 .button--show-all {
   background-color: $basic-grey;
-  color: $black;
+  color: $special-dark-grey;
+
+  &:active {
+    color: rgb(68, 68, 68, 0.6);
+  }
 }

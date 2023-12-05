@@ -52,25 +52,25 @@
   display: block;
   width: 36px;
   height: 50px;
-  background-image: url("../img/cat-slim.svg");
+  background-image: url("../img/icons.svg#cat-slim");
   background-repeat: no-repeat;
-  background-size: 36px 50px;
   z-index: 3;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     top: 81px;
     left: 476px;
     right: 12px;
     width: 140px;
     height: 194px;
+    background: url("../img/icons.svg#cat-slim")/140px 194px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 71px;
+    top: 41px;
     left: 67px;
     width: 70px;
     height: 97px;
+    background-image: url("../img/icons.svg#cat-slim");
   }
 }
 
@@ -82,31 +82,30 @@
   display: block;
   width: 67px;
   height: 28px;
-  background-image: url("../img/cat-pro.svg");
+  background-image: url("../img/icons.svg#cat-pro");
   background-repeat: no-repeat;
-  background-size: 67px 28px;
   z-index: 3;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 81px;
-    left: 476px;
+    top: 135px;
+    left: 412px;
     right: 12px;
-    width: 140px;
-    height: 194px;
+    width: 268px;
+    height: 112px;
+    background-image: url("../img/icons.svg#cat-pro");
   }
 
   @media (min-width: $desktop-width) {
-    top: 71px;
-    left: 67px;
-    width: 70px;
-    height: 97px;
+    top: 67px;
+    left: 33px;
+    width: 134px;
+    height: 56px;
+    background-image: url("../img/icons.svg#cat-pro");
   }
 }
 
 .offers__item::after {
   content: "";
-
   position: absolute;
   left: 22px;
   top: 24px;
@@ -119,8 +118,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 81px;
-    left: 476px;
+    top: 92px;
+    left: 446px;
     right: 12px;
     width: 200px;
     height: 200px;
@@ -203,6 +202,10 @@
   padding-left: 19px;
   position: relative;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-left: 0;
@@ -217,7 +220,8 @@
   background-image: url("../img/icon-arrow.svg");
   width: 32px;
   height: 10px;
-  bottom: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 153px;
 
   @media (min-width: $tablet-width) {

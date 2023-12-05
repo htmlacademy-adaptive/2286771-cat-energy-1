@@ -7,7 +7,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    background: url("../../img/tablet/cat-background-tablet.jpg") no-repeat;
+    background: url("../img/tablet/cat-background-tablet.jpg") no-repeat;
     background-size: cover;
     width: 707px;
     height: 200px;
@@ -56,7 +56,7 @@
   display: block;
   width: 78px;
   height: 80px;
-  background: url("../img/gift.svg");
+  background: url("../img/icons.svg#gift");
 
   @media (min-width: $tablet-width) {
     left: 107px;

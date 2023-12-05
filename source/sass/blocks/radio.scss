@@ -50,7 +50,7 @@
   }
 }
 
-.radio__control--kind_checkable {
+.radio__control {
   font-weight: inherit;
   box-sizing: border-box;
   appearance: none;
@@ -60,7 +60,17 @@
   height: 30px;
   border: 2px solid $special-grey-2;
   border-radius: 50%;
-  box-shadow: inset rgb(255, 255, 255) 0 0 0 6.5px;
+  box-shadow: inset rgb(255, 255, 255) 0 0 0 7.25px;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    box-shadow: inset rgb(255, 255, 255) 0 0 0 10px;
+  }
 }
 
 .radio__control:checked {

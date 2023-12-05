@@ -54,9 +54,9 @@ fieldset.form-contacts {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 0;
   margin: 0;
   margin-right: 13px;
+  padding: 0;
   padding-top: 14px;
 }
 
@@ -78,12 +78,24 @@ fieldset.form-contacts {
   flex-grow: 1;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 0;
   margin: 0;
+  padding: 0;
   padding-top: 14px;
   padding-left: 20px;
   padding-bottom: 13px;
   border: 1px solid rgb(231, 231, 231);
+
+  &:hover {
+    outline: 1px solid rgb(204, 204, 204);
+  }
+
+  &:focus {
+    outline: 2px solid rgb(69, 69, 69);
+  }
+
+  &:disabled {
+    outline: 2px solid rgb(255, 130, 130);
+  }
 }
 
 .form-contacts__item:not(:last-child) {
@@ -96,9 +108,18 @@ fieldset.form-contacts {
   display: block;
   top: 13px;
   right: 12px;
-  background: url("../img/email.svg") no-repeat;
+  background: rgba(34, 34, 34, 1);
+  mask: url("../img/icons.svg#email") no-repeat;
   width: 20px;
   height: 20px;
+}
+
+.form-contacts__item--email:hover::after {
+  background: $basic-green;
+}
+
+.form-contacts__control:disabled + .form-contacts__item--email::after {
+  background: rgba(255, 130, 130, 1);
 }
 
 .form-contacts__item--phone::after {
@@ -107,7 +128,16 @@ fieldset.form-contacts {
   display: block;
   top: 13px;
   right: 12px;
-  background: url("../img/phone.svg") no-repeat;
+  background: rgba(34, 34, 34, 1);
+  mask: url("../img/icons.svg#phone") no-repeat;
   width: 20px;
   height: 20px;
+}
+
+.form-contacts__item--phone:hover::after {
+  background: $basic-green;
+}
+
+.form-contacts__control:disabled + .form-contacts__item--phone::after {
+  background: rgba(255, 130, 130, 1);
 }

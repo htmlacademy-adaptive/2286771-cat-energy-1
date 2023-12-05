@@ -78,18 +78,18 @@
           <ul class="radio__list">
             <li class="radio__item">
               <label class="radio__label">
-                <input class="radio__control radio__control--kind_checkable radio__control--type_radio" type="radio"
+                <input class="radio__control" type="radio"
                   name="radio" checked>Похудение
               </label>
             </li>
             <li class="radio__item">
               <label class="radio__label">
-                <input class="radio__control radio__control--kind_checkable" type="radio" name="radio">Набор массы
+                <input class="radio__control" type="radio" name="radio">Набор массы
               </label>
             </li>
             <li class="radio__item">
               <label class="radio__label">
-                <input class="radio__control radio__control--kind_checkable" type="radio" name="radio">Не знаю (Нужен
+                <input class="radio__control" type="radio" name="radio">Не знаю (Нужен
                 ваш совет)
               </label>
             </li>
@@ -103,11 +103,13 @@
               <label class="form-contacts__label" for="contacts-email">E-mail:*</label>
               <input class="form-contacts__control input" type="email" id="contacts-email" name="contacts-email"
                 placeholder="кuklachev@gmail.com" required>
+                <span class="form-contacts__span--email"></span>
             </li>
             <li class="form-contacts__item form-contacts__item--phone">
               <label class="form-contacts__label" for="contacts-telephone">Телефон:*</label>
               <input class="form-contacts__control input" type="tel" id="contacts-telephone" name="contacts-telephone"
                 placeholder="8 (960) 900-60-90" required>
+
             </li>
           </ul>
         </fieldset>

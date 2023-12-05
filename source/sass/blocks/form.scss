@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+
   @media (min-width: $tablet-width) {
     column-gap: 64px;
   }
