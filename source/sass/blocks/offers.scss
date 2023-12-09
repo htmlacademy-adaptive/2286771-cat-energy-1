@@ -213,6 +213,21 @@
   }
 }
 
+.offers__link:focus {
+  outline: none;
+}
+
+.offers__link:focus::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 30px;
+  outline: 2px solid $violet;
+  outline-offset: 10px;
+  top: 0;
+}
+
 .offers__link::before {
   content: "";
   position: absolute;

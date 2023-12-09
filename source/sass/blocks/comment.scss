@@ -54,6 +54,12 @@ fieldset.comment {
   flex-shrink: 0;
   border: 1px solid rgb(231, 231, 231);
   resize: vertical;
+  position: relative;
+  z-index: 3;
+
+  &:focus {
+    outline: 2px solid rgb(69, 69, 69);
+  }
 
   @media (min-width: $tablet-width) {
     width: 631px;

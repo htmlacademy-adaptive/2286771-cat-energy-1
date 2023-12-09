@@ -66,6 +66,10 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    outline: 3px solid $violet;
+  }
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
