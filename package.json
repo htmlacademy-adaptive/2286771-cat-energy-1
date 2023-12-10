@@ -10,7 +10,8 @@
     "gulp-dart-sass": "^1.0.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
-    "postcss": "8.3.11",
+    "postcss": "^8.4.32",
+    "postcss-csso": "^6.0.1",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
   },
@@ -39,5 +40,8 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "volta": {
+    "node": "16.20.2"
+  }
 }
