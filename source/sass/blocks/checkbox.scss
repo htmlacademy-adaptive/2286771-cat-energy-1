@@ -112,7 +112,6 @@ fieldset.checkbox {
   height: 30px;
   border: 2px solid $special-grey;
   background: rgb(255, 255, 255);
-  box-sizing: border-box;
   z-index: 3;
 
   &:disabled {

@@ -43,7 +43,7 @@
     outline: 2px solid rgb(69, 69, 69);
   }
 
-  &:disabled {
+  &:invalid {
     outline: 2px solid rgb(255, 128, 128);
   }
 }
