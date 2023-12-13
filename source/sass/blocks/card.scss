@@ -187,10 +187,26 @@
 .card__link {
   padding-top: 19px;
   object-fit: contain;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     align-self: center;
   }
+}
+
+.card__link:focus::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 245px;
+  height: 511px;
+  outline: 2px solid $violet;
+  outline-offset: 10px;
+  left: -35px;
+}
+
+.card__link:focus {
+  outline: none;
 }
 
 .card--additional {

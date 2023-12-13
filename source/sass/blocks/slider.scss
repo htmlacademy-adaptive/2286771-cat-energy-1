@@ -209,6 +209,15 @@
   opacity: 0.6;
 }
 
+.slider__range:focus + .slider__line {
+  outline: 2px solid $violet;
+  outline-offset: 25px;
+}
+
+.slider__range:focus + .slider__line::after {
+  background: $violet;
+}
+
 .slider__range:active + .slider__line {
   background: $basic-green;
   opacity: 0.6;
@@ -241,7 +250,7 @@
   content: "";
   flex-shrink: 0;
   background: rgb(128, 128, 128);
-  mask: url("../img/icons.svg#thumb");
+  mask: url("../img/icons/stack.svg#thumb");
   display: flex;
   justify-content: center;
   align-items: center;

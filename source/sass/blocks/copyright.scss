@@ -4,7 +4,7 @@
   width: 112px;
   height: 37px;
   background: rgba(102, 102, 102, 1);
-  mask: url("../img/icons.svg#logo-htmlacademy-text") no-repeat left center;
+  mask: url("../img/stack.svg#logo-htmlacademy-text") no-repeat left center;
   mask-size: 112px 16px;
 
   &:hover {
@@ -26,7 +26,7 @@
   width: 27px;
   height: 40px;
   background: rgba(102, 102, 102, 1);
-  mask: url("../img/icons.svg#logo-html-image") no-repeat;
+  mask: url("../img/icons/stack.svg#logo-html-image") no-repeat;
 }
 
 .copyright__link:hover::after {
@@ -46,6 +46,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid $violet;
+    outline-offset: 10px;
   }
 
   @media (min-width: $tablet-width) {
