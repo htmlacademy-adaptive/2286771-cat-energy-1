@@ -21,6 +21,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .questionary__control {

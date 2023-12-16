@@ -15,6 +15,11 @@
   position: absolute;
   z-index: -2;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile-2x.jpg"), linear-gradient(to right, #54555a 50%, #434248 50%);
+    background-size: 320px 302px;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
