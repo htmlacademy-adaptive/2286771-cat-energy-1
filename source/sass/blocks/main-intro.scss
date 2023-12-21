@@ -8,6 +8,7 @@
   background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile.jpg"), linear-gradient(to right, #54555a 50%, #434248 50%);
   background-repeat: no-repeat, no-repeat;
   background-position: top center, top;
+  background-size: auto, 320px 302px;
   content: "";
   display: block;
   height: 302px;
@@ -17,7 +18,6 @@
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile-2x.jpg"), linear-gradient(to right, #54555a 50%, #434248 50%);
-    background-size: 320px 302px;
   }
 
   @media (min-width: $tablet-width) {
@@ -67,14 +67,14 @@
 .main-intro__link {
   grid-row: 5/6;
   grid-column: 2/3;
-  padding: 10px 44px 8px 44px;
+  padding: 12px 44px 8px 44px;
 }
 
 @media (min-width: $tablet-width) {
   .main-intro__wrapper {
     grid-template-rows: 120px 81px 83px 526px;
     grid-template-columns: 1fr 709px 1fr;
-    margin-top: 62px;
+    margin-top: 67px;
   }
 
   .main-intro__wrapper::before {
@@ -88,6 +88,7 @@
     font-size: 60px;
     font-weight: 400;
     text-align: left;
+    width: 420px;
   }
 
   .main-intro__slogan {

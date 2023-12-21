@@ -1,6 +1,9 @@
 .instruction {
   margin-bottom: 49px;
-  margin-top: 71px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+  }
 }
 
 .instruction__title {
@@ -13,7 +16,7 @@
   padding: 0;
   margin-bottom: 40px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -28,8 +31,9 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 179px;
+    column-gap: 161px;
     row-gap: 37px;
+    margin-right: 109px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +55,14 @@
     line-height: 24px;
     font-size: 16px;
     grid: unset;
+    padding-bottom: 57px;
+  }
+}
+
+.instruction__item:last-child {
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
     padding-bottom: 57px;
   }
 }
@@ -88,7 +100,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 31px;
-    margin-top: 40px;
+    margin-top: 32px;
     height: 80px;
     width: 80px;
   }
@@ -111,9 +123,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 31px;
-    margin-top: 40px;
+    margin-top: 32px;
     height: 80px;
     width: 80px;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -167,5 +180,12 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
+  }
+}
+
+.grid-preparation {
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/2;
   }
 }

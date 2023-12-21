@@ -1,7 +1,7 @@
 .offers {
   margin-top: 20px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 0;
   }
 }
@@ -22,7 +22,7 @@
 .offers__item {
   background-color: $basic-grey;
   margin-bottom: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 22px;
   position: relative;
 
 
@@ -149,6 +149,8 @@
     padding-top: 0;
     padding-left: 0;
     padding-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -164,17 +166,17 @@
   margin: 0;
   padding-left: 20px;
   padding-right: 30px;
-  padding-bottom: 38px;
+  padding-bottom: 41px;
   position: relative;
-  line-height: 24px;
+  line-height: 18px;
 
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-left: 0;
+    padding: 0 0 52px 0;
     grid-column: 1/2;
-    padding-right: 45px;
     color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -194,7 +196,7 @@
 
 .offers__link {
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
@@ -210,6 +212,8 @@
     padding-top: 0;
     padding-left: 0;
     grid-column: 1/2;
+    font-size: 20px;
+    line-height: normal;
   }
 }
 
@@ -217,7 +221,7 @@
   outline: none;
 }
 
-.offers__link:focus::after {
+.offers__link:focus::before {
   content: "";
   position: absolute;
   display: block;
@@ -228,7 +232,7 @@
   top: 0;
 }
 
-.offers__link::before {
+.offers__link::after {
   content: "";
   position: absolute;
   display: block;
@@ -237,11 +241,10 @@
   height: 10px;
   top: 50%;
   transform: translateY(-50%);
-  left: 153px;
+  left: 120px;
 
   @media (min-width: $tablet-width) {
-    bottom: 5px;
-    left: 121px;
+    left: 131px;
   }
 
   @media (min-width: $desktop-width) {
