@@ -13,7 +13,7 @@
     margin: 0 auto;
     padding: 0;
     display: block;
-    padding-top: 11px;
+    padding-top: 12px;
   }
 }
 
@@ -37,8 +37,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 142px 1fr 168px;
+    grid-template-columns: 130px 1fr 160px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 }

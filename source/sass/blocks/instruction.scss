@@ -30,8 +30,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 161px;
+    grid-template-columns: 246px 246px;
+    column-gap: 139px;
     row-gap: 37px;
     margin-right: 109px;
   }
@@ -126,7 +126,6 @@
     margin-top: 32px;
     height: 80px;
     width: 80px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -184,7 +183,6 @@
 }
 
 .grid-preparation {
-
   @media (min-width: $tablet-width) {
     grid-column: 2/2;
   }

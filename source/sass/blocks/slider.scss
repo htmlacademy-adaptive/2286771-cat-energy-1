@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(to top, rgba(234, 234, 234, 1) 462px, rgb(255, 255, 255) 462px, rgb(255, 255, 255) 691px);
+    padding-top: 43px;
   }
 }
 
@@ -21,7 +22,7 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0;
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,12 +55,15 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding: 0;
   margin-bottom: 20px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     flex-direction: column;
     display: flex;
+    padding-top: 11px;
+    text-transform: uppercase;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +79,7 @@
 .slider__costs > span {
   @media (min-width: $tablet-width) {
     text-align: right;
+    padding-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +112,7 @@
 .slider__number {
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 30px;
+  font-size: 34px;
   line-height: 24px;
   border-right: 2px solid $special-grey;
   border-top: 2px solid $special-grey;
@@ -116,10 +121,15 @@
   padding: 11px 0 8px 0;
   grid-row: 1/2;
   grid-column: 1/2;
+  text-transform: uppercase;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding: 15px 0 11px 0;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-top: 15px;
     grid-row: 1/2;
     grid-column: 1/2;
@@ -141,6 +151,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   @media (min-width: $desktop-width) {
