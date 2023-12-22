@@ -9,6 +9,11 @@
     justify-content: flex-start;
     width: 440px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 478px;
+    justify-content: space-between;
+  }
 }
 
 .site-list__link {
@@ -48,6 +53,8 @@
   @media (min-width: $desktop-width) {
     color: $basic-white;
     padding-top: 16px;
+    font-size: 20px;
+    line-height: normal;
   }
 }
 

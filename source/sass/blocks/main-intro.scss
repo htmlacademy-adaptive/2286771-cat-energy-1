@@ -119,8 +119,9 @@
 @media (min-width: $desktop-width) {
   .main-intro__wrapper {
     display: block;
-    margin-bottom: 267px;
+    margin-bottom: 279px;
     position: relative;
+    margin-top: 0;
   }
 
   .main-intro__title {
@@ -133,7 +134,8 @@
   }
 
   .main-intro__slogan {
-    padding-bottom: 52px;
+    margin-bottom: 68px;
+    margin-left: 80px;
   }
 
   .main-intro__image-wrapper {
@@ -148,6 +150,6 @@
   .main-intro__link {
     margin: 0;
     margin-left: 80px;
-    padding: 14px 26px 14px 26px;
+    padding: 12px 27px;
   }
 }

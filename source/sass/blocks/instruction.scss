@@ -4,6 +4,14 @@
   @media (min-width: $tablet-width) {
     margin-top: 45px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
 }
 
 .instruction__title {
@@ -19,6 +27,10 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
   }
 }
 
@@ -39,7 +51,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 120px;
+    column-gap: 80px;
+    margin-right: 0;
   }
 }
 
@@ -57,6 +70,10 @@
     grid: unset;
     padding-bottom: 57px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .instruction__item:last-child {
@@ -64,6 +81,10 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -83,6 +104,10 @@
     text-align: center;
     color: $basic-grey;
     z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -40px;
   }
 }
 
