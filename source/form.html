@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="img/png" href="favicons/favicon.png">
-  <link rel="icon" type="img/png" href="img/favicon-16.png">
-  <link rel="icon" type="img/png" href="img/favicon-32.png">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato.woff2" as="font">
+  <link rel="preload" href="fonts/oswald.woff2" as="font">
 </head>
 
 <body class="page-body">
@@ -100,7 +102,7 @@
           <legend class="form-contacts__legend">Контактные данные <br> (владельца кота)</legend>
           <ul class="form-contacts__list">
             <li class="form-contacts__item form-contacts__item--email">
-              <label class="form-contacts__label form-contacts__label--email" for="contacts-email">E-mail:*</label>
+              <label class="form-contacts__label" for="contacts-email">E-mail:*</label>
               <input class="form-contacts__control input" type="email" id="contacts-email" name="contacts-email"
                 placeholder="кuklachev@gmail.com" required>
                 <span class="form-contacts__span--email"></span>
@@ -109,6 +111,7 @@
               <label class="form-contacts__label" for="contacts-telephone">Телефон:*</label>
               <input class="form-contacts__control input" type="tel" id="contacts-telephone" name="contacts-telephone"
                 placeholder="8 (960) 900-60-90" required>
+                <span class="form-contacts__span--phone"></span>
 
             </li>
           </ul>

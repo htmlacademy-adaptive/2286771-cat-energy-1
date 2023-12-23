@@ -1,6 +1,17 @@
 .instruction {
   margin-bottom: 49px;
-  margin-top: 71px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
 }
 
 .instruction__title {
@@ -13,9 +24,13 @@
   padding: 0;
   margin-bottom: 40px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
   }
 }
 
@@ -27,15 +42,17 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 179px;
+    grid-template-columns: 246px 246px;
+    column-gap: 139px;
     row-gap: 37px;
+    margin-right: 109px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 120px;
+    column-gap: 80px;
+    margin-right: 0;
   }
 }
 
@@ -52,6 +69,22 @@
     font-size: 16px;
     grid: unset;
     padding-bottom: 57px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.instruction__item:last-child {
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -72,6 +105,10 @@
     color: $basic-grey;
     z-index: -1;
   }
+
+  @media (min-width: $tablet-width) {
+    top: -40px;
+  }
 }
 
 .instruction__item--content::before {
@@ -88,7 +125,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 31px;
-    margin-top: 40px;
+    margin-top: 32px;
     height: 80px;
     width: 80px;
   }
@@ -111,7 +148,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 31px;
-    margin-top: 40px;
+    margin-top: 32px;
     height: 80px;
     width: 80px;
   }
@@ -167,5 +204,11 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
+  }
+}
+
+.grid-preparation {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/2;
   }
 }

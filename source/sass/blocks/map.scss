@@ -12,13 +12,48 @@
 .map__logo {
   position: absolute;
   display: block;
-  margin: 134px;
-  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .map {
   margin: auto;
   height: 362px;
+  width: 320px;
   background-image: url("../img/map.jpg");
-  background-position: 0 0;
+
+  background-repeat: no-repeat;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-2x.jpg");
+    background-size: 320px 362px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+    width: 768px;
+    height: 400px;
+    background-size: 768px 400px;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet-2x.jpg");
+      background-size: 768px 400px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
+    width: 1440px;
+    height: 400px;
+    background-size: 1440px 400px;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop-2x.jpg");
+      background-size: 1440px 400px;
+    }
+  }
 }

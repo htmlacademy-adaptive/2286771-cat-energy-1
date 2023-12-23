@@ -1,15 +1,21 @@
 .header--index::before {
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.jpg"), linear-gradient(to right, #54555a 50%, #434248);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, top right;
+    background-size: auto, 720px 694px;
     content: "";
     position: absolute;
     right: 0;
+    top: 0;
     display: block;
     height: 694px;
     width: 50%;
-    background-repeat: no-repeat, no-repeat;
-    background-position: top, top right;
     z-index: -2;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop-2x.jpg"), linear-gradient(to right, #54555a 50%, #434248);
   }
 }
 
@@ -52,7 +58,7 @@
 .header__logo {
   display: flex;
   grid-column: 1/2;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -88,8 +94,8 @@
 .header__wrapper--closed .header__toggle::before {
   content: "";
   position: absolute;
-  top: 13px;
-  left: 16px;
+  top: 11px;
+  left: 29px;
   width: 24px;
   height: 2px;
   background-color: rgb(0, 0, 0);

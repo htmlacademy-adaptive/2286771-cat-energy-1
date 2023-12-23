@@ -64,12 +64,30 @@ fieldset.form-contacts {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
 }
 
 .form-contacts__item {
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+
+.form-contacts__span--email {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 13px;
+  right: 12px;
+  background: rgba(34, 34, 34, 1);
+  mask: url("../img/icons/stack.svg#email") no-repeat;
+  width: 20px;
+  height: 20px;
 }
 
 .form-contacts__control {
@@ -93,36 +111,32 @@ fieldset.form-contacts {
     outline: 2px solid rgb(69, 69, 69);
   }
 
-  &:disabled {
-    outline: 2px solid rgb(255, 130, 130);
+  @media (min-width: $desktop-width) {
+    padding: 11px 0 11px 20px;
   }
 }
 
 .form-contacts__item:not(:last-child) {
   margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
-.form-contacts__item--email::after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 13px;
-  right: 12px;
-  background: rgba(34, 34, 34, 1);
-  mask: url("../img/icons/stack.svg#email") no-repeat;
-  width: 20px;
-  height: 20px;
+.form-contacts__control:invalid {
+  outline: 2px solid rgb(255, 128, 128);
 }
 
-.form-contacts__item--email:hover::after {
+.form-contacts__span--email:hover {
   background: $basic-green;
 }
 
-.form-contacts__control:disabled + .form-contacts__item--email::after {
-  background: rgba(255, 130, 130, 1);
+.form-contacts__control:invalid + .form-contacts__span--email {
+  background-color: rgb(255, 128, 128);
 }
 
-.form-contacts__item--phone::after {
+.form-contacts__span--phone {
   content: "";
   position: absolute;
   display: block;
@@ -134,10 +148,10 @@ fieldset.form-contacts {
   height: 20px;
 }
 
-.form-contacts__item--phone:hover::after {
+.form-contacts__span--phone:hover {
   background: $basic-green;
 }
 
-.form-contacts__control:disabled + .form-contacts__item--phone::after {
-  background: rgba(255, 130, 130, 1);
+.form-contacts__control:invalid + .form-contacts__span--phone {
+  background-color: rgb(255, 128, 128);
 }

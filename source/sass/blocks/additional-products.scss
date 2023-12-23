@@ -5,19 +5,21 @@
   font-weight: 400;
   line-height: 24px;
   position: relative;
-  margin: 0;
-  padding: 0 0 36px 0;
+  padding: 0;
+  margin: 0 0 36px 0;
   box-shadow: -20px 0 0 0 rgb(255, 255, 255), 21px 0 0 0 rgb(255, 255, 255);
   background-color: rgb(255, 255, 255);
   width: fit-content;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 36px 47px;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 80px 40px;
     box-shadow: -20px 0 0 0 rgb(255, 255, 255), 36px 0 0 0 rgb(255, 255, 255);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 81px 0;
+    margin: 0 0 81px 0;
     box-shadow: -40px 0 0 0 rgb(255, 255, 255), 35px 0 0 0 rgb(255, 255, 255);
     line-height: 36px;
     font-size: 36px;
@@ -37,7 +39,7 @@
   z-index: -2;
 
   @media (min-width: $tablet-width) {
-    top: 14px;
+    top: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,10 +68,10 @@
   padding-top: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
+    padding-top: 73px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 75px;
+    padding-top: 79px;
   }
 }

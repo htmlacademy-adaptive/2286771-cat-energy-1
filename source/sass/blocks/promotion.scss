@@ -7,11 +7,12 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    background: url("../img/tablet/cat-background-tablet.jpg") no-repeat;
+    background: url("../img/cat-background-tablet.jpg") no-repeat;
     background-size: cover;
     width: 707px;
     height: 200px;
     margin-bottom: 76px;
+    margin-top: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,7 +36,7 @@
   @media (min-width: $tablet-width) {
     text-align: start;
     padding-top: 71px;
-    padding-left: 422px;
+    padding-left: 300px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +60,7 @@
   background: url("../img/icons/stack.svg#gift");
 
   @media (min-width: $tablet-width) {
-    left: 107px;
+    left: 117px;
   }
 
   @media (min-width: $desktop-width) {
