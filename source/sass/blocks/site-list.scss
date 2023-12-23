@@ -6,13 +6,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     width: 440px;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 478px;
-    justify-content: space-between;
+  @media (min-width: $desktop-width) {
+    width: max-content;
   }
 }
 
